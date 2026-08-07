@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- ============================================================
+       MUNDO HOLÍSTICO USA — Programa Integral de Isabela Owl
+       Landing definitiva: fusión de las versiones "claude" y "qwen".
+       - Paleta morada/crema/dorado de la versión claude.
+       - Secciones firma #que-incluye y #faq de la versión claude.
+       - Animaciones de titular, contadores y menú móvil de la versión qwen.
+       Arquitectura: index.html + css/estilos.css + js/aplicacion.js
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa Integral de Transformacion con Isabela Owl | Mundo Holistico USA</title>
+  <meta name="description" content="Programa integrativo de 5 sesiones y 25 horas con Isabela Owl: hipnoterapia, regresion, escaneo corporal galvanico y meditacion Kriya. Presencial (Mount Shasta, Palo Alto, Zaragoza) o en vivo por Zoom.">
+  <meta name="author" content="Mundo Holístico USA">
+  <meta name="theme-color" content="#3F2749">
+  <link rel="canonical" href="https://mundoholistico.com/programa-integral">
+
+  <!-- ! SEO Social: Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Programa Integral de Transformacion con Isabela Owl">
+  <meta property="og:description" content="Hipnoterapia, regresion, evaluacion mente-cuerpo y meditacion Kriya en un proceso guiado de 25 horas. Presencial o por Zoom.">
+  <meta property="og:url" content="https://mundoholistico.com/programa-integral">
+  <meta property="og:site_name" content="Mundo Holístico USA">
+  <meta property="og:image" content="https://mundoholistico.com/assets/og-programa-integral.jpg">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- ! SEO Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Programa Integral de Transformacion con Isabela Owl">
+  <meta name="twitter:description" content="Un proceso guiado de 25 horas que combina hipnoterapia, regresion, evaluacion mente-cuerpo y meditacion Kriya.">
+  <meta name="twitter:image" content="https://mundoholistico.com/assets/og-programa-integral.jpg">
+
+  <!-- Tipografías: Fraunces (display serif) + Manrope (cuerpo) vía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- ! SEO Técnico: JSON-LD schema.org
+       Se usa Service (no LocalBusiness) porque el negocio opera en varias
+       ciudades sin una única dirección física estable. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Programa integrativo de hipnoterapia y transformacion mente-cuerpo",
+    "provider": {
+      "@type": "Person",
+      "name": "Isabela Owl",
+      "jobTitle": "Hipnoterapeuta certificada e instructora de meditacion Kriya",
+      "affiliation": { "@type": "Organization", "name": "Palo Alto School of Hypnotherapy" }
+    },
+    "brand": { "@type": "Organization", "name": "Mundo Holístico USA", "url": "https://mundoholistico.com" },
+    "areaServed": [
+      { "@type": "City", "name": "Mount Shasta, California" },
+      { "@type": "City", "name": "Palo Alto, California" },
+      { "@type": "City", "name": "Zaragoza, Spain" },
+      { "@type": "City", "name": "Miami, Florida" },
+      { "@type": "City", "name": "Los Angeles, California" },
+      { "@type": "City", "name": "San Francisco, California" },
+      { "@type": "City", "name": "New York, New York" }
+    ],
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "availableLanguage": ["Espanol", "Ingles"],
+      "serviceUrl": "https://mundoholistico.com/programa-integral"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "2500",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/LimitedAvailability",
+      "url": "https://mundoholistico.com/programa-integral"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <!-- ==========================================================================
+       ENCABEZADO — fijo, se compacta al hacer scroll (ver JS)
+       ========================================================================== -->
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__contenedor">
+      <a class="cabecera__marca" href="#contenido-principal" aria-label="Mundo Holistico — Isabela Owl, inicio">
+        <img class="cabecera__logo" src="img/logo-Mundoholistico.png" alt="Mundo Holístico USA" width="96" height="96">
+        <span class="cabecera__marca-texto">
+          <span class="cabecera__nombre">Mundo Holístico USA</span>
+          <span class="cabecera__firma">Isabela Owl</span>
+        </span>
+      </a>
+
+      <nav class="cabecera__nav" aria-label="Navegacion principal">
+        <a class="cabecera__enlace" href="#isabela">Tu guia</a>
+        <a class="cabecera__enlace" href="#que-incluye">El programa</a>
+        <a class="cabecera__enlace" href="#precio">Inversion</a>
+        <a class="cabecera__enlace" href="#modalidad">Ubicaciones</a>
+        <a class="cabecera__enlace" href="#faq">Preguntas</a>
+        <a class="cabecera__idioma" href="index.html" aria-label="Cambiar idioma a ingles" title="Ingles">
+          <svg class="cabecera__idioma-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path></svg>
+          <span>EN</span>
+        </a>
+        <a class="boton boton--whatsapp cabecera__accion"
+           href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20me%20interesa%20el%20programa%20integral%20de%20Isabela%20y%20quiero%20saber%20mas.%20%C2%BFMe%20ayudas%20con%20disponibilidad%3F"
+           target="_blank" rel="noopener noreferrer">
+          <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+          Ver fechas
+        </a>
+      </nav>
+
+      <button class="cabecera__boton-menu" type="button" data-accion="alternar-menu" aria-expanded="false" aria-controls="panel-movil" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Panel móvil a pantalla completa -->
+    <nav class="cabecera__panel-movil" id="panel-movil" aria-label="Navegacion movil" aria-hidden="true">
+      <div class="cabecera__panel-cabecera">
+        <img class="cabecera__panel-logo" src="img/logo-Mundoholistico.png" alt="" width="72" height="72" aria-hidden="true">
+        <div>
+          <p class="cabecera__panel-nombre">Mundo Holístico USA</p>
+          <p class="cabecera__panel-texto">Elige una seccion o escribe directo por WhatsApp.</p>
+        </div>
+      </div>
+      <div class="cabecera__panel-enlaces">
+        <a class="cabecera__panel-enlace" href="#isabela" data-accion="cerrar-menu">Tu guia</a>
+        <a class="cabecera__panel-enlace" href="#que-incluye" data-accion="cerrar-menu">El programa</a>
+        <a class="cabecera__panel-enlace" href="#precio" data-accion="cerrar-menu">Inversion</a>
+        <a class="cabecera__panel-enlace" href="#modalidad" data-accion="cerrar-menu">Ubicaciones</a>
+        <a class="cabecera__panel-enlace" href="#faq" data-accion="cerrar-menu">Preguntas</a>
+      </div>
+      <a class="cabecera__panel-idioma" href="index.html" data-accion="cerrar-menu" aria-label="Cambiar idioma a ingles">
+        <svg class="cabecera__idioma-icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18"></path><path d="M12 3a14 14 0 0 1 0 18"></path><path d="M12 3a14 14 0 0 0 0 18"></path></svg>
+        Ingles
+      </a>
+      <a class="boton boton--whatsapp cabecera__panel-cta"
+        href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20me%20interesa%20el%20programa%20integral%20de%20Isabela%20y%20quiero%20saber%20mas.%20%C2%BFMe%20ayudas%20con%20disponibilidad%3F"
+         target="_blank" rel="noopener noreferrer">Ver fechas por WhatsApp</a>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- ==========================================================================
+         HERO — titular con máscara animada + anillos + estadísticas
+         ========================================================================== -->
+    <section class="heroe" aria-labelledby="titulo-principal">
+      <div class="contenedor heroe__contenedor">
+        <div class="heroe__columna-texto">
+          <p class="heroe__chip-modalidad"><span class="heroe__punto-vivo" aria-hidden="true"></span> Presencial o por Zoom en vivo — en todo el mundo</p>
+          <h1 class="heroe__titulo" id="titulo-principal">
+            <span class="titulo-mascara"><span class="titulo-mascara__linea">Un camino integrativo</span></span>
+            <span class="titulo-mascara"><span class="titulo-mascara__linea">de regreso a <em>ti</em>,</span></span>
+            <span class="titulo-mascara"><span class="titulo-mascara__linea">en cinco sesiones.</span></span>
+          </h1>
+          <p class="heroe__subtitulo">
+            Hipnoterapia, regresion de vidas pasadas y ancestral, evaluacion mente-cuerpo y meditacion Kriya —
+            tejidas en <strong>un proceso personal</strong>, disenado y guiado por Isabela Owl.
+          </p>
+          <div class="heroe__acciones">
+            <a class="boton boton--whatsapp"
+            href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20me%20interesa%20el%20programa%20integral%20de%20Isabela%20y%20quiero%20saber%20mas.%20%C2%BFMe%20ayudas%20con%20disponibilidad%3F"
+               target="_blank" rel="noopener noreferrer" aria-label="Ver fechas disponibles por WhatsApp (se abre en una pestana nueva)">
+              <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+              Ver fechas disponibles
+            </a>
+            <a class="boton boton--fantasma" href="#que-incluye">Ver lo que incluye</a>
+          </div>
+          <p class="heroe__nota">No hay fechas abiertas publicadas — la disponibilidad se coordina directamente por WhatsApp, una persona a la vez.</p>
+        </div>
+
+        <div class="heroe__columna-visual js-revelar">
+          <span class="heroe__anillo heroe__anillo--1" aria-hidden="true"></span>
+          <span class="heroe__anillo heroe__anillo--2" aria-hidden="true"></span>
+          <div class="heroe__marco">
+            <picture>
+              <img class="heroe__imagen" src="img/isabela.png" alt="Retrato de Isabela Owl, terapeuta holistica e instructora de meditacion" width="1200" height="1500" fetchpriority="high" decoding="async">
+            </picture>
+          </div>
+          <p class="heroe__insignia-flotante">
+            <span class="heroe__insignia-numero">20 anos</span>
+            <span class="heroe__insignia-texto">guiando transformaciones</span>
+          </p>
+        </div>
+      </div>
+
+      <dl class="contenedor heroe__estadisticas" aria-label="Resumen del programa">
+        <div class="estadistica js-revelar"><dt class="estadistica__etiqueta">Anos de practica</dt><dd class="estadistica__numero"><span class="contador" data-valor="20" data-sufijo="+">0</span></dd></div>
+        <div class="estadistica js-revelar" style="--retardo:.1s"><dt class="estadistica__etiqueta">Sesiones privadas</dt><dd class="estadistica__numero"><span class="contador" data-valor="5">0</span></dd></div>
+        <div class="estadistica js-revelar" style="--retardo:.2s"><dt class="estadistica__etiqueta">Horas dedicadas a ti</dt><dd class="estadistica__numero"><span class="contador" data-valor="25" data-sufijo="+">0</span></dd></div>
+        <div class="estadistica js-revelar" style="--retardo:.3s"><dt class="estadistica__etiqueta">Ciudades + Zoom mundial</dt><dd class="estadistica__numero"><span class="contador" data-valor="3">0</span><span class="sufijo">+</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- ==========================================================================
+         AUTORIDAD — quién es Isabela
+         ========================================================================== -->
+    <section class="seccion" id="isabela" aria-labelledby="titulo-autoridad">
+      <div class="contenedor autoridad__grid">
+        <div class="autoridad__columna-fija js-revelar">
+          <div class="autoridad__retrato">
+            <img class="autoridad__imagen" src="img/isabela-pic.png" alt="Isabela Owl" width="1200" height="1500" loading="lazy" decoding="async">
+          </div>
+          <p class="autoridad__nombre">Isabela Owl</p>
+          <p class="autoridad__cargo">Terapeuta holistica · Maestria en hipnoterapia</p>
+        </div>
+
+        <div>
+          <span class="seccion__ojo js-revelar">Quien te guia</span>
+          <h2 id="titulo-autoridad" class="seccion__titulo js-revelar">Casi dos decadas en consulta — como terapeuta y como formadora</h2>
+          <p class="seccion__texto js-revelar">Isabela Owl es hipnoterapeuta certificada e instructora certificada, formada en la Palo Alto School of Hypnotherapy y en la University of California. Lleva casi veinte anos trabajando uno a uno con clientes y formando a la siguiente generacion de terapeutas — por eso cada sesion tiene una profundidad que solo da la experiencia de hacerlo miles de veces.</p>
+
+          <div class="autoridad__credencial js-revelar">
+            <span class="autoridad__credencial-icono" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3-5.5-3-5.5 3 1-6.3L3 8.9 9 8z"/></svg></span>
+            <div>
+              <p class="autoridad__credencial-titulo">Formacion multidisciplinaria</p>
+              <p class="autoridad__credencial-texto">Constelaciones familiares, terapia sistemica, maestria en hipnoterapia, regresion de vidas pasadas y de linaje ancestral, y psicologia del dinero — todo integrado en una sola mirada. Isabela puede identificar si un tema viene del linaje, de una vida pasada o de tus propias experiencias, y darte recursos para trabajarlo.</p>
+            </div>
+          </div>
+
+          <div class="autoridad__credencial js-revelar">
+            <span class="autoridad__credencial-icono" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div>
+              <p class="autoridad__credencial-titulo">Instructora certificada de meditacion</p>
+              <p class="autoridad__credencial-texto">Profesora de meditacion en la filosofia de Paramahansa Yogananda, y ensena la tecnica Kriya como parte del programa para que tus resultados sean mas profundos y duraderos.</p>
+            </div>
+          </div>
+
+          <div class="autoridad__credencial js-revelar">
+            <span class="autoridad__credencial-icono" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.5-4 8-8 11Z"/></svg></span>
+            <div>
+              <p class="autoridad__credencial-titulo">Un metodo que se adapta a ti</p>
+              <p class="autoridad__credencial-texto">Ningun proceso terapeutico sigue el mismo protocolo: Isabela no repite tecnicas en serie. Pero su sello en hipnoterapia atraviesa cada caso.</p>
+            </div>
+          </div>
+
+          <div class="autoridad__disciplinas js-revelar" aria-label="Disciplinas y enfoques">
+            <span class="chip-disciplina">Constelaciones familiares</span>
+            <span class="chip-disciplina">Terapia sistemica</span>
+            <span class="chip-disciplina">Maestria en hipnoterapia</span>
+            <span class="chip-disciplina">Regresion de vidas pasadas</span>
+            <span class="chip-disciplina">Trabajo de linaje ancestral</span>
+            <span class="chip-disciplina">Psicologia del dinero</span>
+            <span class="chip-disciplina">Meditacion Kriya</span>
+          </div>
+
+          <p class="autoridad__respaldo js-revelar">Respaldado por casi dos decadas de practica uno a uno y formacion multidisciplinaria certificada aplicada en cada sesion.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PUENTE PROBLEMA / SOLUCIÓN — el ahorro de un solo paquete
+         ========================================================================== -->
+    <section class="seccion seccion--lavanda">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">Por que se siente diferente</span>
+          <h2 class="seccion__titulo">Un proceso guiado, en lugar de cinco citas separadas</h2>
+        </div>
+        <div class="puente">
+          <div class="puente__tarjeta puente__tarjeta--sin js-revelar">
+            <h3 class="puente__titulo">Armarlo por tu cuenta</h3>
+            <ul class="puente__lista">
+              <li class="puente__item">✕ Una hipnoterapeuta para una parte y otro especialista para otra</li>
+              <li class="puente__item">✕ Coordinar calendarios separados, formularios y listas de precios</li>
+              <li class="puente__item">✕ Nadie conectando el proceso entre sesiones</li>
+              <li class="puente__item">✕ Mas tiempo, mas gasto, menos coherencia</li>
+            </ul>
+          </div>
+          <div class="puente__tarjeta puente__tarjeta--con js-revelar">
+            <h3 class="puente__titulo">Una persona, un hilo conductor</h3>
+            <ul class="puente__lista">
+              <li class="puente__item">✓ Isabela disena y guia cada parte personalmente</li>
+              <li class="puente__item">✓ Un expediente unico que evoluciona sesion tras sesion</li>
+              <li class="puente__item">✓ Casi 20 anos de criterio clinico aplicados a tu caso</li>
+              <li class="puente__item">✓ Un proceso unico y coherente, de inicio a cierre</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         QUÉ INCLUYE — sección firma: viaje de 5 sesiones + tarjetas
+         ========================================================================== -->
+    <section class="seccion" id="que-incluye" aria-labelledby="titulo-incluye">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">Que incluye</span>
+          <h2 id="titulo-incluye" class="seccion__titulo">Cinco sesiones. Veinticinco horas dedicadas a ti.</h2>
+          <p class="seccion__texto">Cada sesion tiene alrededor de 2.5 horas de trabajo en vivo, uno a uno, mas cerca de 3 horas adicionales que Isabela invierte en tu expediente, tus evaluaciones y la preparacion de lo que sigue. Son 5.5 horas por sesion, dedicadas completamente a ti.</p>
+        </div>
+
+        <div class="viaje">
+          <div class="viaje__linea" role="list" aria-label="Recorrido de cinco sesiones">
+            <div class="viaje__parada" role="listitem"><span class="viaje__numero">1</span><p class="viaje__parada-titulo">Sesion 1</p><p class="viaje__parada-texto">Evaluacion inicial e hipnoterapia</p></div>
+            <div class="viaje__parada" role="listitem"><span class="viaje__numero">2</span><p class="viaje__parada-titulo">Sesion 2</p><p class="viaje__parada-texto">Evaluacion mente-cuerpo</p></div>
+            <div class="viaje__parada" role="listitem"><span class="viaje__numero">3</span><p class="viaje__parada-titulo">Sesion 3</p><p class="viaje__parada-texto">Trabajo de regresion</p></div>
+            <div class="viaje__parada" role="listitem"><span class="viaje__numero">4</span><p class="viaje__parada-titulo">Sesion 4</p><p class="viaje__parada-texto">Integracion y recursos</p></div>
+            <div class="viaje__parada" role="listitem"><span class="viaje__numero">5</span><p class="viaje__parada-titulo">Sesion 5</p><p class="viaje__parada-texto">Meditacion Kriya close</p></div>
+          </div>
+        </div>
+
+        <div class="incluye__grid">
+          <div class="incluye__tarjeta js-revelar">
+            <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3 class="incluye__tarjeta-titulo">Terapia 1:1 en vivo</h3>
+            <p class="incluye__tarjeta-texto">Hipnoterapia, regresion y analisis: alrededor de 2.5 horas de trabajo directo con Isabela en cada sesion. Los cambios comienzan desde la primera.</p>
+          </div>
+          <div class="incluye__tarjeta js-revelar">
+            <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg></span>
+            <h3 class="incluye__tarjeta-titulo">Escaneo corporal galvanico</h3>
+            <p class="incluye__tarjeta-texto">Un tamizaje de salud con tecnologia galvanica para evaluar organos, microbioma y parasitos, porque cuerpo y mente forman un mismo sistema.</p>
+          </div>
+          <div class="incluye__tarjeta js-revelar">
+            <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <h3 class="incluye__tarjeta-titulo">Evaluacion de habitos mente-cuerpo</h3>
+            <p class="incluye__tarjeta-texto">Una mirada a tus habitos y a patrones del microbioma intestinal, la conexion intestino-cerebro. Es un diagnostico de habitos, no un plan de dieta.</p>
+          </div>
+          <div class="incluye__tarjeta js-revelar">
+            <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+            <h3 class="incluye__tarjeta-titulo">Meditacion Kriya + masterclass</h3>
+            <p class="incluye__tarjeta-texto">Aprendizaje de la tecnica Kriya, mas una masterclass de meditacion dedicada, para que tus resultados sean mas decisivos y se sostengan en el tiempo.</p>
+          </div>
+          <div class="incluye__tarjeta js-revelar">
+            <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg></span>
+            <h3 class="incluye__tarjeta-titulo">Audio personalizado de hipnoterapia</h3>
+            <p class="incluye__tarjeta-texto">Despues de cada sesion recibes un audio personalizado que mantiene el trabajo de programacion y desprogramacion entre encuentros, un sello construido durante 20 anos.</p>
+          </div>
+          <div class="incluye__tarjeta js-revelar">
+            <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5a2 2 0 0 1 2-2h10l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span>
+            <h3 class="incluye__tarjeta-titulo">Recursos semanales + trabajo de fondo</h3>
+            <p class="incluye__tarjeta-texto">Recursos para trabajar en casa semana a semana, mas las ~3 horas que Isabela invierte entre sesiones en tu expediente, evaluaciones y preparacion.</p>
+          </div>
+        </div>
+
+        <p class="incluye__nota-valor js-revelar">Cada parte de esto, las sesiones en vivo, las evaluaciones y el trabajo entre sesiones, esta disenada como un proceso continuo, no como cinco citas desconectadas.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DIFERENCIAL — por qué una guía en vez de varios especialistas
+         ========================================================================== -->
+    <section class="seccion seccion--lavanda">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">La diferencia</span>
+          <h2 class="seccion__titulo">Por que una guia en lugar de varios especialistas</h2>
+        </div>
+        <div class="diferencial__grid">
+          <div class="diferencial__tarjeta js-revelar">
+            <h3 class="diferencial__tarjeta-titulo">Tiempo</h3>
+            <p class="diferencial__tarjeta-texto">Contratar especialistas por separado para hipnoterapia, evaluacion intestinal y meditacion implica coordinar varios calendarios en lugar de un solo camino guiado.</p>
+          </div>
+          <div class="diferencial__tarjeta js-revelar">
+            <h3 class="diferencial__tarjeta-titulo">Dinero</h3>
+            <p class="diferencial__tarjeta-texto">Pagar cada parte por separado suele costar bastante mas que un programa integrado: Isabela lo reune todo en un solo paquete para ahorrar tiempo y dinero.</p>
+          </div>
+          <div class="diferencial__tarjeta js-revelar">
+            <h3 class="diferencial__tarjeta-titulo">Coherencia</h3>
+            <p class="diferencial__tarjeta-texto">Casi dos decadas de experiencia multidisciplinaria hacen que cada sesion construya sobre la anterior, en vez de empezar de cero con otra persona cada vez.</p>
+          </div>
+        </div>
+        <div class="diferencial__suelto js-revelar">
+          <p class="diferencial__suelto-texto">Si te interesa una sesion suelta o una consulta de evaluacion, tambien esta disponible. Pregunta precio y disponibilidad.</p>
+          <a class="boton boton--fantasma" href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20me%20interesa%20una%20sesion%20suelta%20o%20una%20consulta%20de%20evaluacion.%20%C2%BFQue%20precio%20y%20disponibilidad%20tienen%3F" target="_blank" rel="noopener noreferrer">Preguntar por sesiones sueltas en WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--lavanda seccion--credenciales" aria-label="Credenciales clave antes de la inversion">
+      <div class="contenedor credenciales-previo-precio js-revelar">
+        <p class="credenciales-previo-precio__item">Casi 20 anos de practica terapeutica uno a uno</p>
+        <p class="credenciales-previo-precio__item">Formacion multidisciplinaria certificada aplicada en un metodo coherente</p>
+        <p class="credenciales-previo-precio__item">5 sesiones con 25 a 27.5 horas totales de proceso dedicado</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PRECIO — tarjeta oscura de inversión
+         ========================================================================== -->
+    <section class="seccion" id="precio" aria-labelledby="titulo-precio">
+      <div class="contenedor">
+        <div class="precio__tarjeta js-revelar">
+          <div class="precio__cabecera">
+            <p class="precio__etiqueta">El programa integrativo completo</p>
+            <h2 id="titulo-precio" class="precio__cifra"><span>$</span>2,500<span> USD</span></h2>
+            <p class="precio__subtexto">Una terapeuta. Un expediente. Un recorrido completo. Este es el precio del programa completo, no de citas sueltas.</p>
+          </div>
+
+          <div class="precio__rejilla">
+            <div class="precio__panel precio__panel--destacado">
+              <p class="precio__panel-titulo">Por que representa un gran valor</p>
+              <p class="precio__panel-texto">Una sola terapeuta conduce tu proceso completo de principio a fin, con un expediente coherente.</p>
+              <ul class="precio__lista-equilibrada">
+                <li>5 sesiones privadas · 25 a 27.5 horas totales de proceso guiado</li>
+                <li>~2.5 horas en vivo por sesion + ~3 horas de preparacion dedicada a tu caso</li>
+                <li>Escaneo galvanico, masterclass de Kriya y audio personalizado incluidos</li>
+                <li>Un recorrido completo disenado como un solo arco integrativo</li>
+                <li>Una sola inversion clara en lugar de citas dispersas</li>
+              </ul>
+            </div>
+
+            <div class="precio__panel">
+              <p class="precio__panel-titulo">Si cada parte se contratara por separado</p>
+              <p class="precio__panel-texto">El mismo proceso requeriria contratar cada componente por separado y coordinar flujos distintos.</p>
+              <ul class="precio__lista-equilibrada precio__lista-equilibrada--comparativa">
+                <li>Sesiones de hipnoterapia contratadas por separado</li>
+                <li>Trabajo de evaluacion contratado por separado</li>
+                <li>Meditacion Kriya teaching booked independently</li>
+                <li>Acompanamiento con audio personalizado contratado por separado</li>
+                <li>Preparacion entre sesiones tratada como servicio aparte</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="precio__cta-contenedor">
+            <a class="boton boton--whatsapp precio__cta" href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20quiero%20apartar%20mi%20cupo%20para%20el%20programa%20integral.%20%C2%BFMe%20comparten%20fechas%20y%20opciones%20de%20pago%20por%20Zelle%20o%20tarjeta%3F" target="_blank" rel="noopener noreferrer">
+              <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+              Ver fechas y opciones de pago por WhatsApp
+            </a>
+            <p class="precio__nota">No hay fechas fijas publicadas: la disponibilidad se confirma por WhatsApp. Al reservar con anticipacion, puede haber plan de pagos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         INSCRIPCIÓN — cuatro pasos por WhatsApp
+         ========================================================================== -->
+    <section class="seccion seccion--lavanda" id="inscripcion" aria-labelledby="titulo-inscripcion">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">Como inscribirte</span>
+          <h2 id="titulo-inscripcion" class="seccion__titulo">Cuatro pasos, todo coordinado por WhatsApp</h2>
+        </div>
+        <div class="pasos">
+          <div class="pasos__item js-revelar">
+            <p class="pasos__titulo">Escribe por WhatsApp</p>
+            <p class="pasos__texto">Cuentale a Isabela lo que estas viviendo y encuentren una fecha que funcione para ambas partes.</p>
+          </div>
+          <div class="pasos__item js-revelar">
+            <p class="pasos__titulo">Elige Zelle o tarjeta</p>
+            <p class="pasos__texto">Si decides avanzar, el pago se coordina directamente por WhatsApp: Zelle o tarjeta.</p>
+          </div>
+          <div class="pasos__item js-revelar">
+            <p class="pasos__titulo">Envia tu comprobante</p>
+            <p class="pasos__texto">Despues de pagar, envia el comprobante por WhatsApp para confirmar tu inscripcion.</p>
+          </div>
+          <div class="pasos__item js-revelar">
+            <p class="pasos__titulo">Recibe tu enlace de Zoom</p>
+            <p class="pasos__texto">Tu enlace de sesion (o detalles presenciales) se envia cuando el pago queda confirmado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-como-funciona-resumen">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">Como funciona</span>
+          <h2 id="titulo-como-funciona-resumen" class="seccion__titulo">Un proceso claro, coordinado de forma personal por WhatsApp</h2>
+        </div>
+        <div class="como-funciona-resumen">
+          <article class="como-funciona-resumen__paso js-revelar">
+            <p class="como-funciona-resumen__paso-numero">1</p>
+            <p class="como-funciona-resumen__paso-texto">Escribes al equipo de Isabela y compartes lo que necesitas.</p>
+          </article>
+          <article class="como-funciona-resumen__paso js-revelar" style="--retardo:.08s">
+            <p class="como-funciona-resumen__paso-numero">2</p>
+            <p class="como-funciona-resumen__paso-texto">Coordinas modalidad, ciudad o Zoom, y fechas disponibles.</p>
+          </article>
+          <article class="como-funciona-resumen__paso js-revelar" style="--retardo:.16s">
+            <p class="como-funciona-resumen__paso-numero">3</p>
+            <p class="como-funciona-resumen__paso-texto">Confirmas pago por Zelle o tarjeta y envias tu comprobante por WhatsApp.</p>
+          </article>
+          <article class="como-funciona-resumen__paso js-revelar" style="--retardo:.24s">
+            <p class="como-funciona-resumen__paso-numero">4</p>
+            <p class="como-funciona-resumen__paso-texto">Recibes los detalles de tu sesion y comienzas tu proceso 1:1.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MODALIDAD — presencial o Zoom (énfasis grande) + ciudades de gira
+         ========================================================================== -->
+    <section class="seccion" id="modalidad" aria-labelledby="titulo-modalidad">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">Donde se realizan las sesiones</span>
+          <h2 id="titulo-modalidad" class="seccion__titulo">Presencial o en vivo por Zoom, desde cualquier lugar del mundo</h2>
+        </div>
+
+        <div class="modalidad__grid">
+          <article class="modalidad__tarjeta modalidad__tarjeta--zoom js-revelar">
+            <p class="modalidad__insignia">La mas elegida · Mundial</p>
+            <div class="modalidad__imagen-envoltura">
+              <div class="marcador-imagen marcador-imagen--panoramico">
+                <img class="marcador-imagen__foto" src="img/zoom.png" alt="Sesion terapeutica uno a uno por Zoom" width="1600" height="900" loading="lazy" decoding="async">
+              </div>
+            </div>
+            <div class="modalidad__cuerpo">
+              <h3 class="modalidad__titulo">En vivo por Zoom</h3>
+              <p class="modalidad__texto">Todo el programa, uno a uno y en vivo, desde la comodidad de tu hogar, con la misma profundidad y presencia que en consulta presencial.</p>
+              <ul class="modalidad__lista">
+                <li>Misma profundidad, cero traslados</li>
+                <li>Disponible desde cualquier pais y zona horaria</li>
+                <li>Horarios flexibles segun tu vida</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="modalidad__tarjeta js-revelar" style="--retardo:.15s">
+            <div class="modalidad__cuerpo">
+              <h3 class="modalidad__titulo">Presencial</h3>
+              <p class="modalidad__texto">Para quienes prefieren presencia y espacio terapeutico, Isabela atiende en tres sedes base:</p>
+              <ul class="modalidad__lista modalidad__lista--compacta">
+                <li>Mount Shasta, Palo Alto y Zaragoza</li>
+                <li>Las giras ocasionales en EE. UU. se anuncian por WhatsApp</li>
+                <li>Pregunta con anticipacion si necesitas una ciudad o fecha especifica</li>
+              </ul>
+              <div class="modalidad__ciudades" role="list" aria-label="Ubicaciones presenciales">
+                <span class="chip-ciudad" role="listitem">Mount Shasta · CA</span>
+                <span class="chip-ciudad" role="listitem">Palo Alto · CA</span>
+                <span class="chip-ciudad" role="listitem">Zaragoza · Espana</span>
+              </div>
+              <p class="modalidad__texto modalidad__texto--gira">Isabela also travels occasionally across the U.S. — including <strong>Miami, Los Angeles, San Francisco, and New York</strong> on her book tours. <a class="modalidad__enlace" href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20vivo%20en%20mi%20ciudad%20y%20quiero%20saber%20si%20Isabela%20atendera%20presencialmente%20aqui%20o%20si%20recomiendan%20Zoom." target="_blank" rel="noopener noreferrer">Pregunta si estara en tu ciudad.</a></p>
+              <p class="modalidad__texto">Para sesiones presenciales, la ciudad y fecha exactas se confirman por WhatsApp. Para Zoom, tu enlace se envia despues de confirmar pago y horario con el equipo de Isabela.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Marquesina de ciudades de gira (pausa al pasar el cursor) -->
+      <div class="marquesina" aria-label="Ciudades de gira">
+        <div class="marquesina__pista">
+          <p class="marquesina__grupo"><span class="marquesina__texto">Presencial o por Zoom<span class="destello">✦</span>Mount Shasta<span class="destello">✦</span>Palo Alto<span class="destello">✦</span>Zaragoza<span class="destello">✦</span>Giras estacionales: Miami<span class="destello">✦</span>Los Angeles<span class="destello">✦</span>San Francisco<span class="destello">✦</span>New York<span class="destello">✦</span></span></p>
+          <p class="marquesina__grupo" aria-hidden="true"><span class="marquesina__texto">Presencial o por Zoom<span class="destello">✦</span>Mount Shasta<span class="destello">✦</span>Palo Alto<span class="destello">✦</span>Zaragoza<span class="destello">✦</span>Giras estacionales: Miami<span class="destello">✦</span>Los Angeles<span class="destello">✦</span>San Francisco<span class="destello">✦</span>New York<span class="destello">✦</span></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ / POLÍTICAS — sección firma
+         ========================================================================== -->
+    <section class="seccion seccion--lavanda" id="faq" aria-labelledby="titulo-faq">
+      <div class="contenedor">
+        <div class="seccion__cabecera js-revelar">
+          <span class="seccion__ojo">Importante</span>
+          <h2 id="titulo-faq" class="seccion__titulo">Fechas, pagos y politica de cancelacion</h2>
+        </div>
+        <div class="faq js-revelar">
+
+          <div class="faq__item">
+            <button class="faq__pregunta" type="button" aria-expanded="false">
+              <span>Hay fechas abiertas ahora mismo?</span>
+              <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">No se publican fechas abiertas. La disponibilidad se coordina por WhatsApp segun agendas mutuas, por eso la forma de saber que encaja contigo es escribir al equipo.</p></div></div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__pregunta" type="button" aria-expanded="false">
+              <span>Como reservo y pago?</span>
+              <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Primero reservas tu cupo por WhatsApp. Luego el equipo confirma si pagas por Zelle o tarjeta y te comparte los siguientes pasos.</p></div></div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__pregunta" type="button" aria-expanded="false">
+              <span>Que pasa despues de pagar?</span>
+              <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Despues del pago, envias tu comprobante por WhatsApp y el equipo te envia el enlace de Zoom o confirma la coordinacion presencial. Si reservaste con anticipacion, tambien se define ahi el plan de pagos.</p></div></div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__pregunta" type="button" aria-expanded="false">
+              <span>Cuales son las reglas de cancelacion y reprogramacion?</span>
+              <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Los pagos no son reembolsables. Recomendamos reservar con unos tres meses de anticipacion, y cualquier reprogramacion debe pedirse al menos tres dias antes de la sesion.</p></div></div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__pregunta" type="button" aria-expanded="false">
+              <span>Puedo agendar una sesion suelta o una consulta?</span>
+              <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Si. Hay sesiones sueltas de terapia y consultas de evaluacion independientes. Precio y disponibilidad se coordinan directamente por WhatsApp.</p></div></div>
+          </div>
+
+          <div class="faq__item">
+            <button class="faq__pregunta" type="button" aria-expanded="false">
+              <span>Se recopila mi informacion en este sitio?</span>
+              <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">En esta pagina no se recopilan datos personales: no hay formularios, registro ni rastreo. Toda la coordinacion se hace directamente con el equipo de Isabela por WhatsApp.</p></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--post-whatsapp" aria-labelledby="titulo-post-whatsapp">
+      <div class="contenedor post-whatsapp js-revelar">
+        <h2 id="titulo-post-whatsapp" class="post-whatsapp__titulo">Que pasa despues de escribir por WhatsApp</h2>
+        <p class="post-whatsapp__texto">Recibes una respuesta personal del equipo de Isabela, coordinan la modalidad ideal para ti (Zoom o presencial), revisan opciones de fecha y decides tu siguiente paso. Escribir no te obliga a comprar de inmediato.</p>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CTA FINAL
+         ========================================================================== -->
+    <section class="cta-final">
+      <div class="contenedor">
+        <span class="seccion__ojo seccion__ojo--claro js-revelar">Calendario limitado · Pocos procesos por temporada</span>
+        <div class="cta-final__rejilla">
+          <div class="cta-final__texto-columna js-revelar">
+            <h2 class="cta-final__titulo">Si este es tu momento, revisa fechas ahora.</h2>
+            <p class="cta-final__texto">No hay calendario publico abierto. Escribe por WhatsApp para revisar disponibilidad, opciones de pago y ver si te conviene el programa completo o una sesion suelta.</p>
+          </div>
+          <div class="cta-final__pruebas js-revelar">
+            <p class="cta-final__prueba">Sesiones privadas 1:1</p>
+            <p class="cta-final__prueba">Presencial o por Zoom</p>
+            <p class="cta-final__prueba">Reservar con anticipacion puede permitir plan de pagos</p>
+          </div>
+        </div>
+        <div class="cta-final__accion-principal js-revelar">
+          <a class="boton boton--whatsapp boton--grande" href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20estoy%20lista%20o%20listo%20para%20agendar%20el%20programa%20integral%20con%20Isabela.%20%C2%BFCual%20seria%20el%20siguiente%20paso%3F" target="_blank" rel="noopener noreferrer" aria-label="Iniciar conversacion con Isabela por WhatsApp (se abre en una pestana nueva)">
+            <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+            Ver fechas disponibles on WhatsApp
+          </a>
+        </div>
+        <p class="cta-final__nota js-revelar">Respuesta personal · Con cuidado · Usualmente el mismo dia</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       PIE DE PÁGINA
+       ========================================================================== -->
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div class="pie__marca-columna">
+        <p class="pie__marca">
+          <img class="pie__logo" src="img/logo-Mundoholistico.png" alt="Mundo Holístico USA" width="72" height="72">
+          <span>Mundo Holístico USA</span>
+        </p>
+        <p class="pie__texto">The integrative program of Isabela Owl — hypnotherapy, regression, mind-body assessment, and Meditacion Kriya, guided personally from start to finish.</p>
+        <p class="pie__privacidad">En esta pagina no se recopilan datos personales. Toda la coordinacion se realiza directamente por WhatsApp.</p>
+      </div>
+      <div class="pie__secundario">
+        <nav class="pie__nav" aria-label="Navegacion de pie de pagina">
+          <p class="pie__titulo">Explora</p>
+          <ul class="pie__lista">
+            <li><a class="pie__enlace" href="#isabela">Tu guia</a></li>
+            <li><a class="pie__enlace" href="#que-incluye">El programa</a></li>
+            <li><a class="pie__enlace" href="#precio">Inversion</a></li>
+            <li><a class="pie__enlace" href="#modalidad">Ubicaciones</a></li>
+            <li><a class="pie__enlace" href="#faq">Preguntas</a></li>
+          </ul>
+        </nav>
+        <div class="pie__ubicaciones">
+          <p class="pie__titulo">Ubicaciones</p>
+          <ul class="pie__lista">
+            <li>Mount Shasta · CA</li>
+            <li>Palo Alto · CA</li>
+            <li>Zaragoza · Espana</li>
+            <li>Zoom en todo el mundo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p class="pie__legal">© <span id="anio-actual">2026</span> Mundo Holístico USA. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp, visible en todo momento -->
+  <a class="whatsapp-flotante" href="https://api.whatsapp.com/send?phone=14086502189&amp;text=Hola%2C%20me%20interesa%20el%20programa%20integral%20de%20Isabela%20y%20quiero%20saber%20mas.%20%C2%BFMe%20ayudas%20con%20disponibilidad%3F" target="_blank" rel="noopener noreferrer" aria-label="Escribir a Isabela Owl por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+  </a>
+
+  <script type="module" src="js/aplicacion.js"></script>
+</body>
+</html>

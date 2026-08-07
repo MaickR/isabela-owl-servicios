@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       ISABELA · HOLISTIC THERAPY — Landing de conversión
+       Capas SCSS (7-1) simuladas y compiladas dentro de <style>:
+       abstract (variables) → base → layout → components → utilities
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isabela · 5-Session Holistic Therapy Program — Hypnotherapy & Kriya Meditation</title>
+  <meta name="description" content="An exclusive 1:1 holistic program with Isabela — Master Hypnotherapist. 5 sessions, ≈25 hours of deep work: hypnotherapy, galvanic body scan, Kriya meditation masterclass & personalized audios. In person (Mount Shasta, Palo Alto, Zaragoza) or worldwide via Zoom.">
+  <meta name="author" content="Isabela · Holistic Therapy">
+  <meta name="theme-color" content="#182920">
+  <link rel="canonical" href="https://www.isabelaholistic.com/">
+
+  <!-- ! SEO Social: Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Isabela · Holistic Therapy">
+  <meta property="og:title" content="Isabela · 5-Session Holistic Therapy Program">
+  <meta property="og:description" content="Hypnotherapy, galvanic body scan & Kriya meditation in one immersive 1:1 journey. In person or live via Zoom — worldwide.">
+  <meta property="og:url" content="https://www.isabelaholistic.com/">
+  <meta property="og:image" content="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/1c6e452e9-0a71-4df5-a6d5-c630914a5a64.png">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ! SEO Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Isabela · 5-Session Holistic Therapy Program">
+  <meta name="twitter:description" content="One journey instead of scattered sessions. Hypnotherapy, galvanic scan, Kriya meditation & personalized audios — in person or via Zoom.">
+  <meta name="twitter:image" content="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/1c6e452e9-0a71-4df5-a6d5-c630914a5a64.png">
+
+  <!-- ! Tipografías: display serif (Cormorant Garamond) + cuerpo legible (Jost) vía CDN Fontsource -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@latest/latin-500-normal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@latest/latin-600-normal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cormorant-garamond@latest/latin-500-italic.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@latest/latin-300-normal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@latest/latin-400-normal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jost@latest/latin-500-normal.css">
+
+  <!-- ! SEO Técnico: JSON-LD schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Isabela · Holistic Therapy",
+    "description": "Exclusive 5-session holistic program: clinical hypnotherapy, galvanic body scan, Kriya meditation masterclass and personalized reprogramming audios. In person (Mount Shasta, Palo Alto, Zaragoza) or worldwide via Zoom.",
+    "url": "https://www.isabelaholistic.com/",
+    "image": "https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/1c6e452e9-0a71-4df5-a6d5-c630914a5a64.png",
+    "priceRange": "$2500",
+    "telephone": "+1-555-123-4567",
+    "address": { "@type": "PostalAddress", "addressLocality": "Palo Alto", "addressRegion": "CA", "addressCountry": "US" },
+    "areaServed": ["Mount Shasta", "Palo Alto", "Zaragoza", "Miami", "Los Angeles", "San Francisco", "New York", "Worldwide (Zoom)"],
+    "founder": { "@type": "Person", "name": "Isabela", "jobTitle": "Holistic Therapist · Master in Hypnotherapy" },
+    "makesOffer": {
+      "@type": "Offer",
+      "price": "2500",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/LimitedAvailability",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "5-Session Holistic Immersion Program",
+        "description": "Five one-to-one sessions (equivalent to 25 hours): hypnotherapy, galvanic body scan (microbiota & organs), Kriya meditation masterclass and personalized post-session reprogramming audios."
+      }
+    }
+  }
+  </script>
+
+  <style>
+    /* ==========================================================
+       CAPA: ABSTRACT → _variables.scss
+       POR QUÉ: tokens en :root (español) para temas dinámicos.
+       Breakpoints SCSS originales (compilados a media queries):
+       $bp-xs: 0 | $bp-sm: 576px | $bp-md: 768px
+       $bp-lg: 1024px | $bp-xl: 1280px | $bp-2xl: 1536px
+       ========================================================== */
+    :root{
+      /* — paleta tierra / bosque — */
+      --color-crema:        #F7F2E8;
+      --color-crema-suave:  #FBF8F1;
+      --color-arena:        #E7DECB;
+      --color-bosque:       #24382C;
+      --color-bosque-profundo: #182920;
+      --color-tinta:        #26312A;
+      --color-salvia:       #93A98F;
+      --color-salvia-claro: #DCE4D5;
+      --color-arcilla:      #9E5330;
+      --color-arcilla-oscuro:#864527;
+      --color-oro:          #C29A4B;
+      --color-whatsapp:     #25D366;
+      --color-whatsapp-texto:#0F2E1A;
+
+      /* — tipografía — */
+      --fuente-titulo: "Cormorant Garamond", "Times New Roman", serif;
+      --fuente-cuerpo: "Jost", "Segoe UI", system-ui, sans-serif;
+
+      /* — espaciado (escala rítmica) — */
+      --espacio-1: .8rem;  --espacio-2: 1.6rem; --espacio-3: 2.4rem;
+      --espacio-4: 3.2rem; --espacio-5: 4.8rem; --espacio-6: 6.4rem;
+      --espacio-7: 9.6rem; --espacio-8: 12.8rem;
+
+      /* — geometría y elevación — */
+      --radio-suave: 1.4rem;
+      --radio-arco: 24rem 24rem 1.8rem 1.8rem;
+      --sombra-suave: 0 2.4rem 4.8rem -2rem rgb(24 41 32 / .28);
+      --sombra-tarjeta: 0 1.2rem 3.2rem -1.4rem rgb(24 41 32 / .18);
+
+      /* — movimiento — */
+      --curva-suave: cubic-bezier(.22,.61,.21,1);
+      --curva-elegante: cubic-bezier(.19,1,.22,1);
+      --velocidad-media: .5s;
+    }
+
+    /* ==========================================================
+       CAPA: BASE → _base.scss (reset + tipografía global)
+       ========================================================== */
+    *, *::before, *::after{ box-sizing:border-box; margin:0; padding:0; }
+    html{ font-size:62.5%; scroll-behavior:smooth; } /* 1rem = 10px */
+    body{
+      font-family:var(--fuente-cuerpo);
+      font-size:1.7rem;
+      font-weight:300;
+      line-height:1.75;
+      color:var(--color-tinta);
+      background:var(--color-crema);
+      -webkit-font-smoothing:antialiased;
+      overflow-x:hidden;
+    }
+    /* POR QUÉ: grano sutil que unifica la textura visual sin robar contraste */
+    body::after{
+      content:""; position:fixed; inset:0; z-index:2000; pointer-events:none;
+      opacity:.05; mix-blend-mode:multiply;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='r'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23r)' opacity='0.55'/%3E%3C/svg%3E");
+    }
+    html--bloqueado, html.sin-desplazamiento{ overflow:hidden; }
+    img{ max-width:100%; display:block; }
+    h1,h2,h3{ font-family:var(--fuente-titulo); font-weight:500; line-height:1.12; letter-spacing:.01em; }
+    a{ color:inherit; }
+    ul{ list-style:none; }
+    ::selection{ background:var(--color-arcilla); color:var(--color-crema); }
+    :focus-visible{ outline:.3rem solid var(--color-oro); outline-offset:.3rem; border-radius:.4rem; }
+    section[id]{ scroll-margin-top:9rem; }
+
+    /* ==========================================================
+       CAPA: UTILITIES → _utilities.scss
+       ========================================================== */
+    .contenedor{ width:min(100% - 4rem, 116rem); margin-inline:auto; }
+    .ceja{
+      display:inline-flex; align-items:center; gap:1.2rem;
+      font-size:1.2rem; font-weight:500; letter-spacing:.32em;
+      text-transform:uppercase; color:var(--color-arcilla);
+    }
+    .ceja::before{ content:""; width:3.2rem; height:1px; background:currentColor; }
+    .ceja--clara{ color:var(--color-oro); }
+    .titulo-seccion{ font-size:clamp(3.4rem, 5.4vw, 5.6rem); color:var(--color-bosque); margin-block:1.6rem 2.4rem; }
+    .titulo-seccion--claro{ color:var(--color-crema); }
+    .titulo-seccion em{ font-style:italic; color:var(--color-arcilla); }
+    .titulo-seccion--claro em{ color:var(--color-oro); }
+
+    /* — revelado por intersección — */
+    .revelable{
+      opacity:0; transform:translateY(3rem);
+      transition:opacity .9s var(--curva-suave) var(--retardo, 0s),
+                 transform .9s var(--curva-suave) var(--retardo, 0s);
+    }
+    .revelable--visible{ opacity:1; transform:none; }
+
+    /* ==========================================================
+       CAPA: COMPONENTS → _buttons.scss
+       ========================================================== */
+    .boton{
+      display:inline-flex; align-items:center; justify-content:center; gap:1.2rem;
+      padding:1.8rem 3.2rem; border-radius:99rem; border:1px solid transparent;
+      font-family:var(--fuente-cuerpo); font-size:1.5rem; font-weight:500;
+      letter-spacing:.08em; text-transform:uppercase; text-decoration:none;
+      cursor:pointer; transition:transform var(--velocidad-media) var(--curva-suave),
+      box-shadow var(--velocidad-media) var(--curva-suave),
+      background-color var(--velocidad-media) var(--curva-suave);
+    }
+    .boton__icono{ width:2rem; height:2rem; flex:none; transition:transform var(--velocidad-media) var(--curva-suave); }
+    .boton:hover{ transform:translateY(-.4rem); }
+    .boton:hover .boton__icono{ transform:translateX(.3rem) scale(1.08); }
+    .boton--whatsapp{ background:var(--color-whatsapp); color:var(--color-whatsapp-texto); box-shadow:0 1.4rem 3rem -1.2rem rgb(37 211 102 / .55); }
+    .boton--whatsapp:hover{ background:#31e075; }
+    .boton--contorno{ border-color:var(--color-bosque); color:var(--color-bosque); background:transparent; }
+    .boton--contorno:hover{ background:var(--color-bosque); color:var(--color-crema); }
+    .boton--contorno-claro{ border-color:rgb(247 242 232 / .4); color:var(--color-crema); background:transparent; }
+    .boton--contorno-claro:hover{ border-color:var(--color-oro); color:var(--color-oro); }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _header.scss
+       ========================================================== */
+    .saltar-contenido{
+      position:absolute; left:-999rem; top:0; z-index:3000;
+      background:var(--color-bosque); color:var(--color-crema);
+      padding:1.2rem 2.4rem; font-size:1.4rem; text-decoration:none;
+    }
+    .saltar-contenido:focus{ left:1.6rem; top:1.6rem; }
+
+    .cabecera{
+      position:fixed; inset-inline:0; top:0; z-index:1000;
+      padding-block:2rem; transition:background-color var(--velocidad-media) var(--curva-suave),
+      padding var(--velocidad-media) var(--curva-suave), box-shadow var(--velocidad-media) var(--curva-suave);
+    }
+    .cabecera--compacta{ background:rgb(247 242 232 / .96); padding-block:1.2rem; box-shadow:0 1px 0 var(--color-arena), var(--sombra-tarjeta); }
+    .cabecera__contenedor{ display:flex; align-items:center; justify-content:space-between; gap:2.4rem; }
+    .cabecera__marca{ display:inline-flex; align-items:baseline; gap:1rem; text-decoration:none; }
+    .cabecera__logo{ width:2.6rem; height:2.6rem; color:var(--color-arcilla); align-self:center; }
+    .cabecera__nombre{ font-family:var(--fuente-titulo); font-size:2.6rem; color:var(--color-bosque); letter-spacing:.04em; }
+    .cabecera__lema{ font-size:1.1rem; letter-spacing:.3em; text-transform:uppercase; color:var(--color-arcilla); }
+    .cabecera__nav{ display:none; align-items:center; gap:3.2rem; }
+    .cabecera__enlace{ font-size:1.4rem; font-weight:400; letter-spacing:.14em; text-transform:uppercase; text-decoration:none; color:var(--color-bosque); position:relative; padding-block:.6rem; }
+    .cabecera__enlace::after{ content:""; position:absolute; left:0; bottom:0; width:100%; height:1px; background:var(--color-arcilla); transform:scaleX(0); transform-origin:right; transition:transform .4s var(--curva-suave); }
+    .cabecera__enlace:hover::after{ transform:scaleX(1); transform-origin:left; }
+    .cabecera__accion{ padding:1.2rem 2.4rem; font-size:1.3rem; }
+
+    .cabecera__boton-menu{
+      display:inline-flex; flex-direction:column; justify-content:center; gap:.6rem;
+      width:4.6rem; height:4.6rem; background:none; border:0; cursor:pointer; align-items:center;
+    }
+    .cabecera__boton-menu span{ display:block; width:2.6rem; height:2px; background:var(--color-bosque); transition:transform .4s var(--curva-suave), opacity .3s; }
+    .cabecera--menu-abierto .cabecera__boton-menu span:nth-child(1){ transform:translateY(.8rem) rotate(45deg); }
+    .cabecera--menu-abierto .cabecera__boton-menu span:nth-child(2){ opacity:0; }
+    .cabecera--menu-abierto .cabecera__boton-menu span:nth-child(3){ transform:translateY(-.8rem) rotate(-45deg); }
+    .cabecera--menu-abierto{ background:var(--color-crema); }
+
+    .cabecera__panel-movil{
+      position:fixed; inset:0; z-index:-1; background:var(--color-bosque-profundo);
+      display:flex; flex-direction:column; justify-content:center; align-items:center; gap:3.4rem;
+      transform:translateY(-102%); transition:transform .6s var(--curva-elegante);
+    }
+    .cabecera--menu-abierto .cabecera__panel-movil{ transform:none; }
+    .cabecera__panel-enlace{ font-family:var(--fuente-titulo); font-size:3.4rem; color:var(--color-crema); text-decoration:none; }
+    .cabecera__panel-enlace:hover{ color:var(--color-oro); }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _hero.scss  (apertura característica: arco + respiración)
+       ========================================================== */
+    .heroe{ position:relative; padding-top:13rem; padding-bottom:0; overflow:hidden; }
+    .heroe__contenedor{ display:grid; gap:5.6rem; }
+    .heroe__chip-zoom{
+      display:inline-flex; align-items:center; gap:1rem; margin-bottom:2.4rem;
+      background:var(--color-bosque); color:var(--color-crema);
+      padding:.9rem 1.8rem; border-radius:99rem; font-size:1.2rem; font-weight:500; letter-spacing:.22em; text-transform:uppercase;
+    }
+    .heroe__punto-vivo{ width:.8rem; height:.8rem; border-radius:50%; background:var(--color-whatsapp); animation:latir 2.4s ease-in-out infinite; }
+    .heroe__titulo{ font-size:clamp(4.6rem, 9vw, 8.8rem); color:var(--color-bosque); margin-block:1.8rem 2.8rem; }
+    .titulo-mascara{ display:block; overflow:hidden; padding-bottom:.08em; }
+    .titulo-mascara__linea{ display:block; transform:translateY(115%); transition:transform 1.2s var(--curva-elegante); }
+    .titulo-mascara:nth-of-type(2) .titulo-mascara__linea{ transition-delay:.12s; }
+    .titulo-mascara:nth-of-type(3) .titulo-mascara__linea{ transition-delay:.24s; }
+    .heroe--listo .titulo-mascara__linea{ transform:none; }
+    .titulo-mascara__linea--cursiva{ font-style:italic; color:var(--color-arcilla); }
+    .heroe__subtitulo{ max-width:56rem; font-size:1.9rem; color:rgb(38 49 42 / .85); }
+    .heroe__subtitulo strong{ font-weight:500; color:var(--color-bosque); }
+    .heroe__acciones{ display:flex; flex-wrap:wrap; gap:1.8rem; margin-top:4rem; }
+    .heroe__nota{ margin-top:2rem; font-size:1.4rem; letter-spacing:.06em; color:rgb(38 49 42 / .6); }
+
+    .heroe__columna-visual{ position:relative; justify-self:center; width:min(100%, 42rem); }
+    .heroe__anillo{ position:absolute; top:50%; left:50%; translate:-50% -50%; border:1px solid rgb(194 154 75 / .5); border-radius:50%; pointer-events:none; }
+    .heroe__anillo--1{ width:112%; aspect-ratio:1; animation:respirar 9s ease-in-out infinite; }
+    .heroe__anillo--2{ width:128%; aspect-ratio:1; animation:respirar 9s ease-in-out 1.6s infinite; }
+    .heroe__marco{
+      position:relative; border-radius:var(--radio-arco); overflow:hidden;
+      border:1rem solid var(--color-crema-suave); box-shadow:var(--sombra-suave);
+    }
+    .heroe__imagen{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+    .heroe__insignia-flotante{
+      position:static; margin-top:2rem; display:inline-flex; flex-direction:column; gap:.2rem;
+      background:var(--color-crema-suave); border:1px solid var(--color-arena);
+      padding:1.6rem 2.4rem; border-radius:var(--radio-suave); box-shadow:var(--sombra-tarjeta);
+      transform:rotate(-2deg);
+    }
+    .heroe__insignia-numero{ font-family:var(--fuente-titulo); font-size:2.6rem; color:var(--color-arcilla); line-height:1; }
+    .heroe__insignia-texto{ font-size:1.2rem; letter-spacing:.2em; text-transform:uppercase; color:var(--color-bosque); }
+
+    .heroe__estadisticas{
+      margin-top:7rem; border-top:1px solid var(--color-arena);
+      display:grid; grid-template-columns:repeat(2, 1fr);
+    }
+    .estadistica{ padding:3.2rem 2rem; text-align:center; border-right:1px solid var(--color-arena); }
+    .estadistica:nth-child(2n){ border-right:0; }
+    .estadistica:nth-child(-n+2){ border-bottom:1px solid var(--color-arena); }
+    .estadistica__numero{ display:block; font-family:var(--fuente-titulo); font-size:4.4rem; color:var(--color-bosque); line-height:1; }
+    .estadistica__numero .sufijo{ color:var(--color-arcilla); }
+    .estadistica__etiqueta{ display:block; margin-top:.8rem; font-size:1.2rem; letter-spacing:.24em; text-transform:uppercase; color:rgb(38 49 42 / .6); }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _autoridad.scss (columna fija + contenido fluido)
+       ========================================================== */
+    .autoridad{ background:var(--color-crema-suave); padding-block:var(--espacio-7); }
+    .autoridad__rejilla{ display:grid; gap:5.6rem; }
+    .autoridad__columna-fija{ align-self:start; }
+    .autoridad__retrato-envoltura{ width:min(100%, 30rem); border-radius:50% 50% var(--radio-suave) var(--radio-suave); overflow:hidden; border:.8rem solid var(--color-crema); box-shadow:var(--sombra-tarjeta); }
+    .autoridad__retrato{ width:100%; aspect-ratio:1; object-fit:cover; }
+    .autoridad__nombre{ margin-top:2.4rem; font-size:3rem; color:var(--color-bosque); }
+    .autoridad__cargo{ font-size:1.3rem; letter-spacing:.22em; text-transform:uppercase; color:var(--color-arcilla); margin-top:.6rem; }
+    .autoridad__cita{
+      margin-top:3rem; padding:2.4rem 2.8rem; border-left:2px solid var(--color-oro);
+      font-family:var(--fuente-titulo); font-style:italic; font-size:2.2rem; line-height:1.5; color:var(--color-bosque);
+      background:var(--color-crema);
+    }
+    .autoridad__intro{ font-size:1.9rem; max-width:60rem; }
+    .credencial{ display:grid; grid-template-columns:auto 1fr; gap:2.4rem; padding:3rem 0; border-top:1px solid var(--color-arena); }
+    .credencial__numero{ font-family:var(--fuente-titulo); font-size:2.2rem; color:var(--color-oro); line-height:1.4; }
+    .credencial__titulo{ font-size:2.4rem; color:var(--color-bosque); margin-bottom:.8rem; }
+    .credencial__texto{ color:rgb(38 49 42 / .8); }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _programa.scss (sección oscura de conversión)
+       ========================================================== */
+    .programa{ position:relative; background:var(--color-bosque-profundo); color:var(--color-crema); padding-block:var(--espacio-8); overflow:hidden; }
+    .programa::before{
+      content:""; position:absolute; top:-22rem; right:-22rem; width:56rem; height:56rem;
+      border:1px solid rgb(194 154 75 / .22); border-radius:50%; pointer-events:none;
+    }
+    .programa::after{
+      content:""; position:absolute; top:-16rem; right:-16rem; width:44rem; height:44rem;
+      border:1px solid rgb(194 154 75 / .14); border-radius:50%; pointer-events:none;
+    }
+    .programa__cabecera{ display:grid; gap:4.8rem; align-items:end; margin-bottom:6.4rem; }
+    .programa__intro{ max-width:52rem; color:rgb(247 242 232 / .78); font-size:1.8rem; }
+    .programa__inclusiones{ display:grid; gap:2rem; margin-bottom:6.4rem; }
+    .tarjeta-inclusion{
+      padding:3.4rem 3rem; border:1px solid rgb(247 242 232 / .14); border-radius:var(--radio-suave);
+      background:rgb(247 242 232 / .03);
+      transition:transform var(--velocidad-media) var(--curva-suave), border-color var(--velocidad-media) var(--curva-suave);
+    }
+    .tarjeta-inclusion:hover{ transform:translateY(-.6rem); border-color:rgb(194 154 75 / .6); }
+    .tarjeta-inclusion__icono{ width:3.6rem; height:3.6rem; color:var(--color-oro); margin-bottom:2.2rem; }
+    .tarjeta-inclusion__titulo{ font-size:2.4rem; color:var(--color-crema); margin-bottom:1rem; }
+    .tarjeta-inclusion__texto{ font-size:1.55rem; color:rgb(247 242 232 / .72); }
+
+    .programa__precio-rejilla{ display:grid; gap:4.8rem; align-items:center; }
+    .programa__precio-panel{
+      padding:4.4rem 4rem; border:1px solid rgb(194 154 75 / .45); border-radius:var(--radio-suave);
+      background:rgb(194 154 75 / .06);
+    }
+    .programa__precio-comparativo{ font-size:1.5rem; letter-spacing:.1em; text-transform:uppercase; color:rgb(247 242 232 / .6); }
+    .programa__precio-comparativo s{ color:rgb(247 242 232 / .45); margin-left:.8rem; }
+    .programa__precio-valor{ font-family:var(--fuente-titulo); font-size:clamp(6.4rem, 9vw, 9rem); line-height:1; color:var(--color-oro); margin-block:1.2rem .4rem; }
+    .programa__precio-moneda{ font-size:1.5rem; letter-spacing:.24em; text-transform:uppercase; color:var(--color-crema); }
+    .programa__precio-nota{ margin-top:2rem; color:rgb(247 242 232 / .78); font-size:1.6rem; }
+    .programa__precio-lista{ margin-top:2.8rem; display:grid; gap:1.2rem; }
+    .programa__precio-lista li{ display:flex; gap:1.2rem; align-items:baseline; font-size:1.55rem; color:rgb(247 242 232 / .85); }
+    .programa__precio-lista li::before{ content:"✦"; color:var(--color-oro); font-size:1.1rem; }
+    .programa__acciones{ display:flex; flex-wrap:wrap; gap:1.8rem; margin-top:3.6rem; }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _modalidad.scss
+       ========================================================== */
+    .modalidad{ padding-block:var(--espacio-8); }
+    .modalidad__rejilla{ display:grid; gap:3rem; align-items:stretch; }
+    .tarjeta-modalidad{
+      position:relative; display:flex; flex-direction:column; border-radius:var(--radio-suave);
+      background:var(--color-crema-suave); border:1px solid var(--color-arena); overflow:hidden; box-shadow:var(--sombra-tarjeta);
+    }
+    .tarjeta-modalidad--zoom{ border-color:var(--color-oro); }
+    .tarjeta-modalidad__imagen-envoltura{ overflow:hidden; }
+    .tarjeta-modalidad__imagen{ width:100%; aspect-ratio:16/10; object-fit:cover; transition:transform 1.4s var(--curva-suave); }
+    .tarjeta-modalidad:hover .tarjeta-modalidad__imagen{ transform:scale(1.05); }
+    .imagen-respira{ animation:kenburns 22s ease-in-out infinite alternate; }
+    .tarjeta-modalidad__cuerpo{ padding:3.6rem 3.4rem 4rem; display:flex; flex-direction:column; gap:1.6rem; flex:1; }
+    .tarjeta-modalidad__insignia{
+      position:absolute; top:2rem; left:2rem; background:var(--color-oro); color:var(--color-bosque-profundo);
+      font-size:1.1rem; font-weight:500; letter-spacing:.24em; text-transform:uppercase; padding:.8rem 1.6rem; border-radius:99rem;
+    }
+    .tarjeta-modalidad__titulo{ font-size:3rem; color:var(--color-bosque); }
+    .tarjeta-modalidad__texto{ color:rgb(38 49 42 / .8); }
+    .tarjeta-modalidad__lista{ display:grid; gap:1rem; margin-top:.6rem; }
+    .tarjeta-modalidad__lista li{ display:flex; gap:1.2rem; align-items:baseline; font-size:1.55rem; }
+    .tarjeta-modalidad__lista li::before{ content:"—"; color:var(--color-arcilla); }
+    .modalidad__ciudades{ display:flex; flex-wrap:wrap; gap:1rem; margin-top:1.4rem; }
+    .chip-ciudad{ border:1px solid var(--color-salvia); color:var(--color-bosque); padding:.7rem 1.8rem; border-radius:99rem; font-size:1.3rem; letter-spacing:.12em; text-transform:uppercase; }
+
+    .marquesina{ background:var(--color-bosque); overflow:hidden; padding-block:2.2rem; border-block:1px solid var(--color-bosque-profundo); }
+    .marquesina__pista{ display:flex; width:max-content; animation:desfilar 30s linear infinite; }
+    .marquesina:hover .marquesina__pista{ animation-play-state:paused; }
+    .marquesina__grupo{ display:flex; gap:4.8rem; padding-right:4.8rem; white-space:nowrap; }
+    .marquesina__texto{ font-family:var(--fuente-titulo); font-style:italic; font-size:2.2rem; color:var(--color-crema); }
+    .marquesina__texto .destello{ color:var(--color-oro); font-style:normal; margin-inline:1.2rem; }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _flexibilidad.scss
+       ========================================================== */
+    .flexibilidad{ background:var(--color-crema-suave); padding-block:var(--espacio-8); }
+    .flexibilidad__rejilla{ display:grid; gap:5.6rem; align-items:center; }
+    .flexibilidad__imagen-envoltura{ width:min(100%, 40rem); justify-self:center; border-radius:var(--radio-arco); overflow:hidden; border:.8rem solid var(--color-crema); box-shadow:var(--sombra-tarjeta); }
+    .flexibilidad__imagen{ width:100%; aspect-ratio:4/5; object-fit:cover; }
+    .flexibilidad__lista{ display:grid; }
+    .flexibilidad__item{ display:grid; grid-template-columns:auto 1fr; gap:2.8rem; padding:3.4rem 0; border-top:1px solid var(--color-arena); }
+    .flexibilidad__item:last-child{ border-bottom:1px solid var(--color-arena); }
+    .flexibilidad__numero{ font-family:var(--fuente-titulo); font-style:italic; font-size:3rem; color:var(--color-arcilla); line-height:1.2; }
+    .flexibilidad__titulo{ font-size:2.5rem; color:var(--color-bosque); margin-bottom:.8rem; }
+    .flexibilidad__texto{ color:rgb(38 49 42 / .8); }
+    .flexibilidad__texto strong{ font-weight:500; color:var(--color-bosque); }
+
+    /* ==========================================================
+       CAPA: COMPONENTS → _acordeon.scss (políticas)
+       ========================================================== */
+    .politicas{ padding-block:var(--espacio-7); }
+    .acordeon{ max-width:80rem; margin-inline:auto; border-top:1px solid var(--color-arena); }
+    .acordeon__item{ border-bottom:1px solid var(--color-arena); }
+    .acordeon__disparador{
+      width:100%; display:flex; justify-content:space-between; align-items:center; gap:2.4rem;
+      background:none; border:0; cursor:pointer; padding:2.8rem .4rem; text-align:left;
+      font-family:var(--fuente-titulo); font-size:2.4rem; color:var(--color-bosque);
+    }
+    .acordeon__icono{ position:relative; width:1.8rem; height:1.8rem; flex:none; transition:transform .5s var(--curva-suave); }
+    .acordeon__icono::before, .acordeon__icono::after{ content:""; position:absolute; inset:0; margin:auto; background:var(--color-arcilla); }
+    .acordeon__icono::before{ width:100%; height:2px; }
+    .acordeon__icono::after{ width:2px; height:100%; }
+    .acordeon__item--abierto .acordeon__icono{ transform:rotate(45deg); }
+    .acordeon__panel{ display:grid; grid-template-rows:0fr; transition:grid-template-rows .55s var(--curva-suave); }
+    .acordeon__item--abierto .acordeon__panel{ grid-template-rows:1fr; }
+    .acordeon__panel-interior{ overflow:hidden; }
+    .acordeon__contenido{ padding:0 .4rem 3rem; max-width:64rem; color:rgb(38 49 42 / .8); }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _cta-final.scss + _footer.scss
+       ========================================================== */
+    .cta-final{ position:relative; background:var(--color-bosque-profundo); color:var(--color-crema); padding-block:var(--espacio-8); text-align:center; overflow:hidden; }
+    .cta-final__anillo{ position:absolute; top:50%; left:50%; translate:-50% -50%; border:1px solid rgb(194 154 75 / .25); border-radius:50%; pointer-events:none; }
+    .cta-final__anillo--1{ width:52rem; aspect-ratio:1; animation:respirar 9s ease-in-out infinite; }
+    .cta-final__anillo--2{ width:72rem; aspect-ratio:1; animation:respirar 9s ease-in-out 1.6s infinite; }
+    .cta-final__titulo{ font-size:clamp(3.8rem, 6.4vw, 6.8rem); color:var(--color-crema); max-width:22ch; margin:1.6rem auto 2.4rem; position:relative; }
+    .cta-final__titulo em{ color:var(--color-oro); }
+    .cta-final__texto{ max-width:52rem; margin-inline:auto; color:rgb(247 242 232 / .75); position:relative; }
+    .cta-final__acciones{ margin-top:4.4rem; display:flex; justify-content:center; position:relative; }
+    .cta-final__boton{ font-size:1.6rem; padding:2.2rem 4.4rem; }
+    .cta-final__nota{ margin-top:2.4rem; font-size:1.4rem; letter-spacing:.14em; text-transform:uppercase; color:rgb(247 242 232 / .55); position:relative; }
+
+    .pie{ background:var(--color-bosque-profundo); color:rgb(247 242 232 / .7); border-top:1px solid rgb(247 242 232 / .1); padding-block:6.4rem 3.2rem; }
+    .pie__rejilla{ display:grid; gap:4.8rem; }
+    .pie__marca{ font-family:var(--fuente-titulo); font-size:3.2rem; color:var(--color-crema); }
+    .pie__descripcion{ margin-top:1.2rem; max-width:34rem; font-size:1.5rem; }
+    .pie__titulo{ font-size:1.3rem; letter-spacing:.28em; text-transform:uppercase; color:var(--color-oro); margin-bottom:1.8rem; }
+    .pie__lista{ display:grid; gap:1rem; font-size:1.5rem; }
+    .pie__enlace{ text-decoration:none; }
+    .pie__enlace:hover{ color:var(--color-oro); }
+    .pie__barra{ margin-top:5.6rem; padding-top:2.4rem; border-top:1px solid rgb(247 242 232 / .1); display:flex; flex-wrap:wrap; gap:1.6rem; justify-content:space-between; font-size:1.3rem; letter-spacing:.08em; }
+
+    /* ==========================================================
+       CAPA: BASE → _animations.scss (keyframes firma)
+       ========================================================== */
+    @keyframes respirar{ 0%,100%{ transform:scale(1); opacity:.5; } 50%{ transform:scale(1.06); opacity:1; } }
+    @keyframes latir{ 0%,100%{ transform:scale(1); opacity:1; } 50%{ transform:scale(1.5); opacity:.55; } }
+    @keyframes desfilar{ to{ transform:translateX(-50%); } }
+    @keyframes kenburns{ from{ transform:scale(1); } to{ transform:scale(1.08); } }
+
+    /* ==========================================================
+       CAPA: LAYOUT → _breakpoints.scss  (Mobile First: de xs hacia 2xl)
+       ========================================================== */
+    @media (min-width: 576px){ /* $bp-sm */
+      .heroe__estadisticas{ grid-template-columns:repeat(4, 1fr); }
+      .estadistica{ border-right:1px solid var(--color-arena); }
+      .estadistica:nth-child(2n){ border-right:1px solid var(--color-arena); }
+      .estadistica:last-child{ border-right:0; }
+      .estadistica:nth-child(-n+2){ border-bottom:0; }
+    }
+    @media (min-width: 768px){ /* $bp-md */
+      .programa__inclusiones{ grid-template-columns:repeat(2, 1fr); }
+      .pie__rejilla{ grid-template-columns:repeat(2, 1fr); }
+    }
+    @media (min-width: 1024px){ /* $bp-lg */
+      .cabecera__nav{ display:flex; }
+      .cabecera__boton-menu, .cabecera__panel-movil{ display:none; }
+      .heroe{ padding-top:16rem; }
+      .heroe__contenedor{ grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); align-items:center; gap:6.4rem; }
+      .heroe__insignia-flotante{ position:absolute; left:-3.4rem; bottom:5.6rem; margin-top:0; }
+      .autoridad__rejilla{ grid-template-columns:minmax(0,4fr) minmax(0,7fr); gap:7.2rem; }
+      .autoridad__columna-fija{ position:sticky; top:12rem; } /* columna fija: firma de scroll */
+      .programa__cabecera{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); }
+      .programa__precio-rejilla{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); }
+      .modalidad__rejilla{ grid-template-columns:minmax(0,7fr) minmax(0,5fr); }
+      .flexibilidad__rejilla{ grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:7.2rem; }
+      .pie__rejilla{ grid-template-columns:2fr 1fr 1fr 1fr; }
+    }
+    @media (min-width: 1280px){ /* $bp-xl */
+      .programa__inclusiones{ grid-template-columns:repeat(4, 1fr); }
+    }
+
+    /* ! Accesibilidad: respeto total a prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      *, *::before, *::after{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
+      .revelable{ opacity:1; transform:none; transition:none; }
+      .titulo-mascara__linea{ transform:none; transition:none; }
+      .marquesina__pista{ animation:none; flex-wrap:wrap; width:auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="saltar-contenido" href="#contenido-principal">Skip to main content</a>
+
+  <!-- ================= CABECERA ================= -->
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__contenedor">
+      <a class="cabecera__marca" href="#" aria-label="Isabela Holistic Therapy — home">
+        <!-- glifo loto (decorativo) -->
+        <svg class="cabecera__logo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 4c2.2 2.6 2.2 6 0 8.4C9.8 10 9.8 6.6 12 4Z"/>
+          <path d="M5 8c3 .6 5.4 2.8 6.6 5.6C8.4 13.6 5.8 11.6 5 8Z"/>
+          <path d="M19 8c-.8 3.6-3.4 5.6-6.6 5.6C13.6 10.8 16 8.6 19 8Z"/>
+          <path d="M4 16c2.4 2.6 5.2 3.8 8 3.8s5.6-1.2 8-3.8"/>
+        </svg>
+        <span class="cabecera__nombre">Isabela</span>
+        <span class="cabecera__lema" aria-hidden="true">Holistic Therapy</span>
+      </a>
+
+      <nav class="cabecera__nav" aria-label="Primary navigation">
+        <a class="cabecera__enlace" href="#guia">Your Guide</a>
+        <a class="cabecera__enlace" href="#programa">The Program</a>
+        <a class="cabecera__enlace" href="#modalidad">Modality</a>
+        <a class="cabecera__enlace" href="#flexibilidad">Flexibility</a>
+        <a class="cabecera__enlace" href="#politicas">Policies</a>
+        <a class="boton boton--whatsapp cabecera__accion" href="https://wa.me/15551234567?text=Hello%20Isabela%2C%20I%27d%20like%20to%20check%20available%20dates%20for%20the%205-Session%20Holistic%20Program." target="_blank" rel="noopener noreferrer">Check Dates</a>
+      </nav>
+
+      <button class="cabecera__boton-menu" type="button" data-accion="alternar-menu" aria-expanded="false" aria-controls="panel-movil" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="cabecera__panel-movil" id="panel-movil" aria-label="Mobile navigation" aria-hidden="true">
+      <a class="cabecera__panel-enlace" href="#guia" data-accion="cerrar-menu">Your Guide</a>
+      <a class="cabecera__panel-enlace" href="#programa" data-accion="cerrar-menu">The Program</a>
+      <a class="cabecera__panel-enlace" href="#modalidad" data-accion="cerrar-menu">Modality</a>
+      <a class="cabecera__panel-enlace" href="#flexibilidad" data-accion="cerrar-menu">Flexibility</a>
+      <a class="cabecera__panel-enlace" href="#politicas" data-accion="cerrar-menu">Policies</a>
+      <a class="boton boton--whatsapp" href="https://wa.me/15551234567?text=Hello%20Isabela%2C%20I%27d%20like%20to%20check%20available%20dates%20for%20the%205-Session%20Holistic%20Program." target="_blank" rel="noopener noreferrer">Check Dates on WhatsApp</a>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+
+    <!-- ================= HÉROE ================= -->
+    <section class="heroe" aria-labelledby="titulo-principal">
+      <div class="contenedor heroe__contenedor">
+        <div class="heroe__columna-texto">
+          <p class="heroe__chip-zoom"><span class="heroe__punto-vivo" aria-hidden="true"></span> Now booking worldwide · Live via Zoom</p>
+          <p class="ceja">Hypnotherapy · Galvanic Scan · Kriya Meditation</p>
+          <h1 class="heroe__titulo" id="titulo-principal">
+            <span class="titulo-mascara"><span class="titulo-mascara__linea">Come back</span></span>
+            <span class="titulo-mascara"><span class="titulo-mascara__linea">to yourself —</span></span>
+            <span class="titulo-mascara"><span class="titulo-mascara__linea titulo-mascara__linea--cursiva">in five sessions.</span></span>
+          </h1>
+          <p class="heroe__subtitulo">
+            An exclusive one-to-one immersive program with <strong>Isabela</strong> — weaving clinical hypnotherapy,
+            galvanic body scanning and Kriya meditation into a single coherent journey.
+            <strong>In person, or live via Zoom</strong> from anywhere on earth.
+          </p>
+          <div class="heroe__acciones">
+            <a class="boton boton--whatsapp" href="https://wa.me/15551234567?text=Hello%20Isabela%2C%20I%27d%20like%20to%20check%20available%20dates%20for%20the%205-Session%20Holistic%20Program." target="_blank" rel="noopener noreferrer" aria-label="Check available dates on WhatsApp (opens in a new tab)">
+              <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Check Available Dates
+            </a>
+            <a class="boton boton--contorno" href="#programa">Explore the Program</a>
+          </div>
+          <p class="heroe__nota">No forms. No data captured. Just a human conversation.</p>
+        </div>
+
+        <div class="heroe__columna-visual">
+          <span class="heroe__anillo heroe__anillo--1" aria-hidden="true"></span>
+          <span class="heroe__anillo heroe__anillo--2" aria-hidden="true"></span>
+          <div class="heroe__marco">
+            <picture>
+              <source media="(min-width: 64em)" srcset="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/1c6e452e9-0a71-4df5-a6d5-c630914a5a64.png">
+              <img class="heroe__imagen" src="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/1c6e452e9-0a71-4df5-a6d5-c630914a5a64.png" alt="Isabela, holistic therapist and master hypnotherapist, smiling softly in her studio" fetchpriority="high" decoding="async" width="1024" height="1024">
+            </picture>
+          </div>
+          <p class="heroe__insignia-flotante">
+            <span class="heroe__insignia-numero">20 years</span>
+            <span class="heroe__insignia-texto">guiding transformations</span>
+          </p>
+        </div>
+      </div>
+
+      <dl class="contenedor heroe__estadisticas" aria-label="Program at a glance">
+        <div class="estadistica revelable"><dt class="estadistica__etiqueta" style="order:2">Years of practice</dt><dd class="estadistica__numero"><span class="contador" data-valor="20" data-sufijo="+">0</span></dd></div>
+        <div class="estadistica revelable" style="--retardo:.1s"><dt class="estadistica__etiqueta" style="order:2">Private sessions</dt><dd class="estadistica__numero"><span class="contador" data-valor="5">0</span></dd></div>
+        <div class="estadistica revelable" style="--retardo:.2s"><dt class="estadistica__etiqueta" style="order:2">Hours of deep work</dt><dd class="estadistica__numero"><span class="contador" data-valor="25">0</span></dd></div>
+        <div class="estadistica revelable" style="--retardo:.3s"><dt class="estadistica__etiqueta" style="order:2">Cities + worldwide Zoom</dt><dd class="estadistica__numero"><span class="contador" data-valor="3">0</span><span class="sufijo">+</span></dd></div>
+      </dl>
+    </section>
+
+    <!-- ================= AUTORIDAD ================= -->
+    <section class="autoridad" id="guia" aria-labelledby="titulo-autoridad">
+      <div class="contenedor autoridad__rejilla">
+        <div class="autoridad__columna-fija revelable">
+          <div class="autoridad__retrato-envoltura">
+            <img class="autoridad__retrato" src="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/1c6e452e9-0a71-4df5-a6d5-c630914a5a64.png" alt="Portrait of Isabela in her meditation studio" loading="lazy" decoding="async">
+          </div>
+          <h3 class="autoridad__nombre">Isabela</h3>
+          <p class="autoridad__cargo">Holistic Therapist · Master in Hypnotherapy</p>
+          <blockquote class="autoridad__cita">“I don’t believe in quick fixes. I believe in deep, honest work — and in the wisdom your own body already holds.”</blockquote>
+        </div>
+
+        <div class="autoridad__columna-contenido">
+          <p class="ceja revelable">Your guide</p>
+          <h2 class="titulo-seccion revelable" id="titulo-autoridad">Two decades of guiding people <em>home to themselves.</em></h2>
+          <p class="autoridad__intro revelable">
+            For twenty years, Isabela has accompanied professionals, artists and seekers through profound
+            processes of change — blending rigorous clinical training with the timeless contemplative
+            tradition of Kriya Yoga. One practitioner. One continuous thread of care. No hand-offs.
+          </p>
+
+          <div class="credencial revelable">
+            <span class="credencial__numero" aria-hidden="true">01</span>
+            <div>
+              <h3 class="credencial__titulo">20 Years of Practice</h3>
+              <p class="credencial__texto">Two decades of one-to-one therapeutic work, refined session after session into a method that honors both science and spirit.</p>
+            </div>
+          </div>
+          <div class="credencial revelable" style="--retardo:.08s">
+            <span class="credencial__numero" aria-hidden="true">02</span>
+            <div>
+              <h3 class="credencial__titulo">Master in Hypnotherapy</h3>
+              <p class="credencial__texto">Advanced academic training in clinical hypnotherapy — the backbone of the reprogramming work inside the program.</p>
+            </div>
+          </div>
+          <div class="credencial revelable" style="--retardo:.16s">
+            <span class="credencial__numero" aria-hidden="true">03</span>
+            <div>
+              <h3 class="credencial__titulo">Certified in Palo Alto &amp; the University of California</h3>
+              <p class="credencial__texto">Formal certifications completed in Palo Alto and through the University of California, grounding every session in recognized standards of care.</p>
+            </div>
+          </div>
+          <div class="credencial revelable" style="--retardo:.24s">
+            <span class="credencial__numero" aria-hidden="true">04</span>
+            <div>
+              <h3 class="credencial__titulo">Meditation Teacher · Lineage of Paramahansa Yogananda</h3>
+              <p class="credencial__texto">A meditation professor in the philosophy of Paramahansa Yogananda — teaching Kriya meditation not as a technique, but as a way of living.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROGRAMA ================= -->
+    <section class="programa" id="programa" aria-labelledby="titulo-programa">
+      <div class="contenedor">
+        <div class="programa__cabecera">
+          <div>
+            <p class="ceja ceja--clara revelable">The program · $2,500 USD</p>
+            <h2 class="titulo-seccion titulo-seccion--claro revelable" id="titulo-programa">One journey. <em>Everything included.</em></h2>
+          </div>
+          <p class="programa__intro revelable">
+            Booking scattered therapies means scattered results — and a scattered budget.
+            This program holds your entire process in five immersive sessions,
+            equivalent to <strong>25 hours of dedicated work</strong>, so the transformation compounds instead of restarting.
+          </p>
+        </div>
+
+        <ul class="programa__inclusiones">
+          <li class="tarjeta-inclusion revelable">
+            <svg class="tarjeta-inclusion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 3v5"/><circle cx="12" cy="11" r="3"/><path d="M5.5 17.5c1.7 1.9 4 3 6.5 3s4.8-1.1 6.5-3"/></svg>
+            <h3 class="tarjeta-inclusion__titulo">Clinical Hypnotherapy</h3>
+            <p class="tarjeta-inclusion__texto">Deep guided sessions that reprogram limiting patterns at the subconscious level — where real change begins.</p>
+          </li>
+          <li class="tarjeta-inclusion revelable" style="--retardo:.1s">
+            <svg class="tarjeta-inclusion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8V5a1 1 0 0 1 1-1h3M17 4h3a1 1 0 0 1 1 1v3M21 16v3a1 1 0 0 1-1 1h-3M7 20H4a1 1 0 0 1-1-1v-3"/><path d="M7 12h2l1.5-3 2.5 6 1.5-3H17"/></svg>
+            <h3 class="tarjeta-inclusion__titulo">Galvanic Body Scan</h3>
+            <p class="tarjeta-inclusion__texto">A non-invasive reading of your microbiota and key organs — clear information about what your body is asking for.</p>
+          </li>
+          <li class="tarjeta-inclusion revelable" style="--retardo:.2s">
+            <svg class="tarjeta-inclusion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M12 4c2.2 2.6 2.2 6 0 8.4C9.8 10 9.8 6.6 12 4Z"/><path d="M5 8c3 .6 5.4 2.8 6.6 5.6C8.4 13.6 5.8 11.6 5 8Z"/><path d="M19 8c-.8 3.6-3.4 5.6-6.6 5.6C13.6 10.8 16 8.6 19 8Z"/><path d="M4 16c2.4 2.6 5.2 3.8 8 3.8s5.6-1.2 8-3.8"/></svg>
+            <h3 class="tarjeta-inclusion__titulo">Kriya Meditation Masterclass</h3>
+            <p class="tarjeta-inclusion__texto">A live masterclass in the philosophy of Yogananda — a meditation practice you will keep for the rest of your life.</p>
+          </li>
+          <li class="tarjeta-inclusion revelable" style="--retardo:.3s">
+            <svg class="tarjeta-inclusion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4"/></svg>
+            <h3 class="tarjeta-inclusion__titulo">Personalized Reprogramming Audios</h3>
+            <p class="tarjeta-inclusion__texto">Custom audio recordings created for you after each session, so the work continues between our meetings.</p>
+          </li>
+        </ul>
+
+        <div class="programa__precio-rejilla">
+          <div class="revelable">
+            <h3 class="titulo-seccion titulo-seccion--claro" style="font-size:clamp(2.8rem,4vw,4rem); margin-bottom:1.6rem;">The smart math of <em>continuity.</em></h3>
+            <p class="programa__intro">
+              Separate hypnotherapy sessions, body scans and meditation training booked on their own
+              add up quickly — and rarely talk to each other. The program bundles them into one
+              coherent arc at a fraction of the cost, saving you months of searching and
+              thousands in disconnected visits.
+            </p>
+            <div class="programa__acciones">
+              <a class="boton boton--whatsapp" href="https://wa.me/15551234567?text=Hello%20Isabela%2C%20I%27d%20like%20to%20check%20available%20dates%20for%20the%205-Session%20Holistic%20Program." target="_blank" rel="noopener noreferrer">
+                <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                Reserve Your Journey
+              </a>
+              <a class="boton boton--contorno-claro" href="#modalidad">See Modality Options</a>
+            </div>
+          </div>
+
+          <aside class="programa__precio-panel revelable" aria-label="Program investment">
+            <p class="programa__precio-comparativo">Booked separately (est.) <s>≈ $3,900</s></p>
+            <p class="programa__precio-valor">$2,500</p>
+            <p class="programa__precio-moneda">USD · complete program</p>
+            <p class="programa__precio-nota">≈ 35% saved — and one coherent journey instead of scattered visits.</p>
+            <ul class="programa__precio-lista">
+              <li>5 private sessions · equivalent to 25 hours of dedication</li>
+              <li>Hypnotherapy + galvanic scan + Kriya masterclass included</li>
+              <li>Personalized post-session reprogramming audios</li>
+              <li>Payment plans available with early booking</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MODALIDAD ================= -->
+    <section class="modalidad" id="modalidad" aria-labelledby="titulo-modalidad">
+      <div class="contenedor">
+        <p class="ceja revelable">Modality</p>
+        <h2 class="titulo-seccion revelable" id="titulo-modalidad">Choose how you want <em>to work.</em></h2>
+
+        <div class="modalidad__rejilla">
+          <article class="tarjeta-modalidad tarjeta-modalidad--zoom revelable">
+            <p class="tarjeta-modalidad__insignia">Most chosen · Worldwide</p>
+            <div class="tarjeta-modalidad__imagen-envoltura">
+              <img class="tarjeta-modalidad__imagen" src="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/132c42501-47c7-44d2-81c7-51297f75c3d9.png" alt="Isabela guiding a live one-to-one therapy session via Zoom from her studio" loading="lazy" decoding="async">
+            </div>
+            <div class="tarjeta-modalidad__cuerpo">
+              <h3 class="tarjeta-modalidad__titulo">Live via Zoom</h3>
+              <p class="tarjeta-modalidad__texto">The full program, one-to-one and live, from the safety of your home — with the same depth and presence as sitting across from Isabela. Recommended for international clients.</p>
+              <ul class="tarjeta-modalidad__lista">
+                <li>Same depth, zero travel time</li>
+                <li>Available from any country and time zone</li>
+                <li>Flexible scheduling around your life</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tarjeta-modalidad revelable" style="--retardo:.15s">
+            <div class="tarjeta-modalidad__imagen-envoltura">
+              <img class="tarjeta-modalidad__imagen imagen-respira" src="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/108c2a091-ab7c-4f58-98b9-01d29f9c7ad9.png" alt="Mount Shasta at sunrise, one of the locations where Isabela offers in-person sessions" loading="lazy" decoding="async">
+            </div>
+            <div class="tarjeta-modalidad__cuerpo">
+              <h3 class="tarjeta-modalidad__titulo">In Person</h3>
+              <p class="tarjeta-modalidad__texto">For those who prefer presence, silence and sacred space, Isabela receives clients in three home locations:</p>
+              <div class="modalidad__ciudades" role="list" aria-label="In-person locations">
+                <span class="chip-ciudad" role="listitem">Mount Shasta</span>
+                <span class="chip-ciudad" role="listitem">Palo Alto</span>
+                <span class="chip-ciudad" role="listitem">Zaragoza</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="marquesina" aria-label="Seasonal tour cities">
+        <div class="marquesina__pista">
+          <p class="marquesina__grupo">
+            <span class="marquesina__texto">Seasonal tours<span class="destello">✦</span>Miami<span class="destello">✦</span>Los Angeles<span class="destello">✦</span>San Francisco<span class="destello">✦</span>New York<span class="destello">✦</span>Ask for tour dates<span class="destello">✦</span></span>
+          </p>
+          <p class="marquesina__grupo" aria-hidden="true">
+            <span class="marquesina__texto">Seasonal tours<span class="destello">✦</span>Miami<span class="destello">✦</span>Los Angeles<span class="destello">✦</span>San Francisco<span class="destello">✦</span>New York<span class="destello">✦</span>Ask for tour dates<span class="destello">✦</span></span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FLEXIBILIDAD ================= -->
+    <section class="flexibilidad" id="flexibilidad" aria-labelledby="titulo-flexibilidad">
+      <div class="contenedor flexibilidad__rejilla">
+        <div class="flexibilidad__imagen-envoltura revelable">
+          <img class="flexibilidad__imagen" src="https://image.qwenlm.ai/public_source/e415ad6b-ab42-40fb-8074-58829051e322/194fac48d-597d-478b-b28c-62bceca2140e.png" alt="A woman practicing Kriya meditation in soft morning light" loading="lazy" decoding="async">
+        </div>
+
+        <div>
+          <p class="ceja revelable">Flexibility</p>
+          <h2 class="titulo-seccion revelable" id="titulo-flexibilidad">Not ready for the full journey <em>yet?</em></h2>
+          <div class="flexibilidad__lista">
+            <div class="flexibilidad__item revelable">
+              <span class="flexibilidad__numero" aria-hidden="true">i.</span>
+              <div>
+                <h3 class="flexibilidad__titulo">Single Sessions &amp; Evaluations</h3>
+                <p class="flexibilidad__texto">Start with one therapy session or a personal evaluation and let the process unfold at your own rhythm — simply <strong>ask via WhatsApp</strong> and Isabela will guide you.</p>
+              </div>
+            </div>
+            <div class="flexibilidad__item revelable" style="--retardo:.1s">
+              <span class="flexibilidad__numero" aria-hidden="true">ii.</span>
+              <div>
+                <h3 class="flexibilidad__titulo">Simple, Secure Payments</h3>
+                <p class="flexibilidad__texto">Pay comfortably with <strong>Zelle</strong> or <strong>credit / debit card</strong>. No platforms, no friction — a direct, transparent transaction.</p>
+              </div>
+            </div>
+            <div class="flexibilidad__item revelable" style="--retardo:.2s">
+              <span class="flexibilidad__numero" aria-hidden="true">iii.</span>
+              <div>
+                <h3 class="flexibilidad__titulo">Payment Plans with Early Booking</h3>
+                <p class="flexibilidad__texto">Reserve your spot in advance and split your investment into friendly installments. <strong>Early booking guarantees your place</strong> in Isabela’s limited calendar.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= POLÍTICAS ================= -->
+    <section class="politicas" id="politicas" aria-labelledby="titulo-politicas">
+      <div class="contenedor">
+        <p class="ceja revelable" style="display:flex; justify-content:center;">Clear agreements</p>
+        <h2 class="titulo-seccion revelable" id="titulo-politicas" style="text-align:center;">Policies, <em>plainly spoken.</em></h2>
+
+        <div class="acordeon revelable">
+          <div class="acordeon__item">
+            <h3>
+              <button class="acordeon__disparador" type="button" data-accion="alternar-acordeon" aria-expanded="false" aria-controls="panel-politica-1" id="disparador-politica-1">
+                Cancellations &amp; Refunds
+                <span class="acordeon__icono" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acordeon__panel" id="panel-politica-1" role="region" aria-labelledby="disparador-politica-1">
+              <div class="acordeon__panel-interior">
+                <p class="acordeon__contenido">Your space is held exclusively for you. For that reason, bookings confirmed within the final 30 days before the program starts are non-refundable. When you reserve early, you protect both your place and your investment.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="acordeon__item">
+            <h3>
+              <button class="acordeon__disparador" type="button" data-accion="alternar-acordeon" aria-expanded="false" aria-controls="panel-politica-2" id="disparador-politica-2">
+                Rescheduling
+                <span class="acordeon__icono" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acordeon__panel" id="panel-politica-2" role="region" aria-labelledby="disparador-politica-2">
+              <div class="acordeon__panel-interior">
+                <p class="acordeon__contenido">Life happens. Any session can be rescheduled with at least 3 days’ notice, subject to availability — just send a message on WhatsApp and we will find a new moment together.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="acordeon__item">
+            <h3>
+              <button class="acordeon__disparador" type="button" data-accion="alternar-acordeon" aria-expanded="false" aria-controls="panel-politica-3" id="disparador-politica-3">
+                Privacy by Design
+                <span class="acordeon__icono" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="acordeon__panel" id="panel-politica-3" role="region" aria-labelledby="disparador-politica-3">
+              <div class="acordeon__panel-interior">
+                <p class="acordeon__contenido">This website captures no personal data: no forms, no sign-ups, no tracking. Every conversation happens directly between you and Isabela on WhatsApp — private, human and unhurried.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="cta-final" aria-labelledby="titulo-cta-final">
+      <span class="cta-final__anillo cta-final__anillo--1" aria-hidden="true"></span>
+      <span class="cta-final__anillo cta-final__anillo--2" aria-hidden="true"></span>
+      <div class="contenedor">
+        <p class="ceja ceja--clara revelable" style="justify-content:center;">Limited calendar · Few journeys per season</p>
+        <h2 class="cta-final__titulo revelable" id="titulo-cta-final">Your transformation begins with <em>one message.</em></h2>
+        <p class="cta-final__texto revelable">Tell Isabela what you are going through, and together you will find the dates that fit your life. No pressure, no forms — just a conversation.</p>
+        <div class="cta-final__acciones revelable">
+          <a class="boton boton--whatsapp cta-final__boton" href="https://wa.me/15551234567?text=Hello%20Isabela%2C%20I%27d%20like%20to%20check%20available%20dates%20for%20the%205-Session%20Holistic%20Program." target="_blank" rel="noopener noreferrer" aria-label="Start a conversation with Isabela on WhatsApp (opens in a new tab)">
+            <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Check Available Dates on WhatsApp
+          </a>
+        </div>
+        <p class="cta-final__nota revelable">Replies personally · With care · Usually the same day</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIE ================= -->
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__rejilla">
+        <div>
+          <p class="pie__marca">Isabela · Holistic Therapy</p>
+          <p class="pie__descripcion">Hypnotherapy, galvanic body scanning and Kriya meditation — woven into one immersive, deeply human journey.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <p class="pie__titulo">Explore</p>
+          <ul class="pie__lista">
+            <li><a class="pie__enlace" href="#guia">Your Guide</a></li>
+            <li><a class="pie__enlace" href="#programa">The Program</a></li>
+            <li><a class="pie__enlace" href="#modalidad">Modality</a></li>
+            <li><a class="pie__enlace" href="#politicas">Policies</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="pie__titulo">Locations</p>
+          <ul class="pie__lista">
+            <li>Mount Shasta · CA</li>
+            <li>Palo Alto · CA</li>
+            <li>Zaragoza · ES</li>
+            <li>Worldwide via Zoom</li>
+          </ul>
+        </div>
+        <div>
+          <p class="pie__titulo">Contact</p>
+          <ul class="pie__lista">
+            <li><a class="pie__enlace" href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">WhatsApp · +1 555 123 4567</a></li>
+            <li>Zelle &amp; card payments</li>
+            <li>No forms · No data captured</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie__barra">
+        <p>© <span id="anio-actual">2025</span> Isabela Holistic Therapy. All rights reserved.</p>
+        <p>Made with presence.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    'use strict';
+
+    /* ============================================================
+       CAPA: JS → aplicacion.js (ES2026+)
+       POR QUÉ: un único listener delegado por tipo de evento evita
+       docenas de handlers sueltos (DRY + rendimiento).
+       ============================================================ */
+
+    /** @constant {Readonly<Object>} CONFIGURACION - Ajustes globales de la interfaz. */
+    const CONFIGURACION = Object.freeze({
+      UMBRAL_SCROLL_CABECERA: 24,
+      DURACION_CONTADOR_MS: 1500,
+      CLASE_VISIBLE: 'revelable--visible',
+      CLASE_MENU_ABIERTO: 'cabecera--menu-abierto',
+    });
+
+    /** @constant {boolean} MOVIMIENTO_REDUCIDO - Respeta la preferencia del sistema (accesibilidad). */
+    const MOVIMIENTO_REDUCIDO = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ?? false;
+
+    /**
+     * Calcula un valor interpolado con easing "easeOutCubic".
+     * POR QUÉ: función pura → testeable y reutilizable sin efectos colaterales.
+     * @param {number} progreso - Avance normalizado [0..1].
+     * @returns {number} Valor suavizado [0..1].
+     */
+    const calcularEasing = (progreso) => 1 - Math.pow(1 - progreso, 3);
+
+    /**
+     * Anima el número de un contador desde 0 hasta su objetivo.
+     * @param {HTMLElement} elemento - Nodo con [data-valor].
+     * @returns {void}
+     */
+    const animarContador = (elemento) => {
+      const objetivo = Number.parseInt(elemento.dataset.valor ?? '0', 10);
+      const sufijo = elemento.dataset.sufijo ?? '';
+      if (Number.isNaN(objetivo)) { return; } // Fail fast ante datos corruptos.
+      if (MOVIMIENTO_REDUCIDO) { elemento.textContent = `${objetivo}${sufijo}`; return; }
+
+      const instanteInicial = performance.now();
+      const pasoTemporal = (ahora) => {
+        const progreso = Math.min((ahora - instanteInicial) / CONFIGURACION.DURACION_CONTADOR_MS, 1);
+        elemento.textContent = `${Math.round(calcularEasing(progreso) * objetivo)}${sufijo}`;
+        if (progreso < 1) { requestAnimationFrame(pasoTemporal); }
+      };
+      requestAnimationFrame(pasoTemporal);
+    };
+
+    /**
+     * Abre o cierra el menú móvil sincronizando ARIA y bloqueo de scroll.
+     * @param {boolean} [forzarCierre=false] - Cierra sin alternar (tecla Escape / clic en enlace).
+     * @returns {void}
+     */
+    const alternarMenuMovil = (forzarCierre = false) => {
+      const cabecera = document.getElementById('cabecera');
+      const panel = document.getElementById('panel-movil');
+      const botonMenu = document.querySelector('[data-accion="alternar-menu"]');
+      if (!cabecera || !panel || !botonMenu) { return; }
+
+      const quedaraAbierto = forzarCierre ? false : !cabecera.classList.contains(CONFIGURACION.CLASE_MENU_ABIERTO);
+      cabecera.classList.toggle(CONFIGURACION.CLASE_MENU_ABIERTO, quedaraAbierto);
+      document.documentElement.classList.toggle('sin-desplazamiento', quedaraAbierto);
+      botonMenu.setAttribute('aria-expanded', String(quedaraAbierto));
+      botonMenu.setAttribute('aria-label', quedaraAbierto ? 'Close menu' : 'Open menu');
+      panel.setAttribute('aria-hidden', String(!quedaraAbierto));
+      if (quedaraAbierto) { panel.querySelector('a')?.focus(); } else { botonMenu.focus(); }
+    };
+
+    /**
+     * Alterna un ítem del acordeón de políticas (uno abierto a la vez).
+     * @param {HTMLButtonElement} disparador - Botón pulsado.
+     * @returns {void}
+     */
+    const alternarAcordeon = (disparador) => {
+      const itemActivo = disparador.closest('.acordeon__item');
+      if (!itemActivo) { return; }
+      const quedaraAbierto = !itemActivo.classList.contains('acordeon__item--abierto');
+
+      document.querySelectorAll('.acordeon__item--abierto').forEach((item) => {
+        item.classList.remove('acordeon__item--abierto');
+        item.querySelector('.acordeon__disparador')?.setAttribute('aria-expanded', 'false');
+      });
+
+      itemActivo.classList.toggle('acordeon__item--abierto', quedaraAbierto);
+      disparador.setAttribute('aria-expanded', String(quedaraAbierto));
+    };
+
+    /**
+     * Delegación central de clics: menú móvil y acordeón.
+     * POR QUÉ: un solo listener en document simplifica el ciclo de vida (SOLID).
+     * @param {MouseEvent} evento - Evento nativo de clic.
+     * @returns {void}
+     */
+    const manejarClickDelegado = (evento) => {
+      const objetivo = evento.target;
+      if (!(objetivo instanceof Element)) { return; }
+
+      const conAccion = objetivo.closest('[data-accion]');
+      if (conAccion?.dataset.accion === 'alternar-menu') { alternarMenuMovil(); return; }
+      if (conAccion?.dataset.accion === 'cerrar-menu') { alternarMenuMovil(true); return; }
+
+      const disparadorAcordeon = objetivo.closest('.acordeon__disparador');
+      if (disparadorAcordeon) { alternarAcordeon(disparadorAcordeon); }
+    };
+
+    /**
+     * Cierra el menú móvil con la tecla Escape (patrón de diálogo accesible).
+     * @param {KeyboardEvent} evento - Evento de teclado.
+     * @returns {void}
+     */
+    const manejarTeclaEscape = (evento) => {
+      if (evento.key !== 'Escape') { return; }
+      const cabecera = document.getElementById('cabecera');
+      if (cabecera?.classList.contains(CONFIGURACION.CLASE_MENU_ABIERTO)) { alternarMenuMovil(true); }
+    };
+
+    /**
+     * Compacta la cabecera al hacer scroll, con throttling vía rAF.
+     * @returns {void}
+     */
+    const inicializarCabecera = () => {
+      const cabecera = document.getElementById('cabecera');
+      if (!cabecera) { return; }
+      let tickPendiente = false;
+      window.addEventListener('scroll', () => {
+        if (tickPendiente) { return; }
+        tickPendiente = true;
+        requestAnimationFrame(() => {
+          cabecera.classList.toggle('cabecera--compacta', window.scrollY > CONFIGURACION.UMBRAL_SCROLL_CABECERA);
+          tickPendiente = false;
+        });
+      }, { passive: true });
+    };
+
+    /**
+     * Revela elementos al entrar en viewport (Intersection Observer).
+     * @returns {void}
+     */
+    const inicializarRevelado = () => {
+      const elementos = document.querySelectorAll('.revelable');
+      if (elementos.length === 0) { return; }
+      if (MOVIMIENTO_REDUCIDO || !('IntersectionObserver' in window)) {
+        elementos.forEach((el) => el.classList.add(CONFIGURACION.CLASE_VISIBLE));
+        return;
+      }
+      const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+          if (!entrada.isIntersecting) { return; }
+          entrada.target.classList.add(CONFIGURACION.CLASE_VISIBLE);
+          observador.unobserve(entrada.target);
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      elementos.forEach((el) => observador.observe(el));
+    };
+
+    /**
+     * Activa los contadores numéricos cuando su estadística entra en pantalla.
+     * @returns {void}
+     */
+    const inicializarContadores = () => {
+      const contadores = document.querySelectorAll('.contador');
+      if (contadores.length === 0) { return; }
+      if (MOVIMIENTO_REDUCIDO || !('IntersectionObserver' in window)) {
+        contadores.forEach(animarContador);
+        return;
+      }
+      const observador = new IntersectionObserver((entradas) => {
+        entradas.forEach((entrada) => {
+          if (!entrada.isIntersecting) { return; }
+          animarContador(entrada.target);
+          observador.unobserve(entrada.target);
+        });
+      }, { threshold: 0.6 });
+      contadores.forEach((contador) => observador.observe(contador));
+    };
+
+    /**
+     * Dispara la máscara de líneas del titular tras el primer pintado.
+     * POR QUÉ: doble rAF garantiza que el estado inicial ya está aplicado.
+     * @returns {void}
+     */
+    const inicializarTitular = () => {
+      const heroe = document.querySelector('.heroe');
+      if (!heroe) { return; }
+      requestAnimationFrame(() => requestAnimationFrame(() => heroe.classList.add('heroe--listo')));
+    };
+
+    /**
+     * Sincroniza el año del pie con el reloj del dispositivo.
+     * @returns {void}
+     */
+    const asignarAnioActual = () => {
+      const nodoAnio = document.getElementById('anio-actual');
+      if (nodoAnio) { nodoAnio.textContent = String(new Date().getFullYear()); }
+    };
+
+    /**
+     * Punto de entrada: compone los módulos de interacción.
+     * POR QUÉ: cada inicializador es independiente (SOLID · bajo acople).
+     * @returns {void}
+     */
+    const inicializarAplicacion = () => {
+      document.addEventListener('click', manejarClickDelegado);
+      document.addEventListener('keydown', manejarTeclaEscape);
+      inicializarCabecera();
+      inicializarRevelado();
+      inicializarContadores();
+      inicializarTitular();
+      asignarAnioActual();
+    };
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', inicializarAplicacion)
+      : inicializarAplicacion();
+  </script>
+</body>
+</html>

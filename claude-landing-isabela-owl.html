@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Integrative Transformation Program with Isabela Owl | Mundo Holístico USA</title>
+<meta name="description" content="A 5-session, 25-hour integrative program combining hypnotherapy, regression, mind-body assessment and Kriya meditation — guided personally by Isabela Owl. In-person or via Zoom.">
+<meta name="author" content="Mundo Holístico USA">
+<link rel="canonical" href="https://mundoholisticousa.com/programa-integral">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Integrative Transformation Program with Isabela Owl">
+<meta property="og:description" content="Hypnotherapy, regression, mind-body assessment and Kriya meditation in one guided 25-hour process. In-person or via Zoom.">
+<meta property="og:url" content="https://mundoholisticousa.com/programa-integral">
+<meta property="og:site_name" content="Mundo Holístico USA">
+<meta property="og:image" content="https://mundoholisticousa.com/assets/og-programa-integral.jpg">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Integrative Transformation Program with Isabela Owl">
+<meta name="twitter:description" content="A guided 25-hour process combining hypnotherapy, regression, mind-body assessment and Kriya meditation.">
+<meta name="twitter:image" content="https://mundoholisticousa.com/assets/og-programa-integral.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- JSON-LD: se usa Service (no LocalBusiness) porque el negocio opera en varias ciudades
+     sin una única dirección fija — LocalBusiness exigiría una dirección física estable. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Integrative hypnotherapy and mind-body transformation program",
+  "provider": {
+    "@type": "Person",
+    "name": "Isabela Owl",
+    "jobTitle": "Certified Hypnotherapist & Meditation Instructor",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Palo Alto School of Hypnotherapy"
+    }
+  },
+  "brand": {
+    "@type": "Organization",
+    "name": "Mundo Holístico USA",
+    "url": "https://mundoholisticousa.com"
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Mount Shasta, California" },
+    { "@type": "City", "name": "Palo Alto, California" },
+    { "@type": "City", "name": "Zaragoza, Spain" },
+    { "@type": "City", "name": "Miami, Florida" },
+    { "@type": "City", "name": "Los Angeles, California" },
+    { "@type": "City", "name": "San Francisco, California" },
+    { "@type": "City", "name": "New York, New York" }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "availableLanguage": ["English", "Spanish"],
+    "serviceUrl": "https://mundoholisticousa.com/programa-integral"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "2500",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://mundoholisticousa.com/programa-integral"
+  }
+}
+</script>
+
+<style>
+/* ==========================================================================
+   1. VARIABLES — sistema de diseño (arquitectura 7-1 simulada en un archivo)
+   ========================================================================== */
+:root {
+  /* -- Color: crema cálido + morado profundo + dorado, identidad espiritual-profesional -- */
+  --color-crema-fondo: #FBF6EF;
+  --color-lavanda-fondo: #F2E9F7;
+  --color-morado-profundo: #3F2749;
+  --color-morado-medio: #7C5A96;
+  --color-morado-claro: #C7AEDD;
+  --color-dorado: #B98D3E;
+  --color-dorado-claro: #E7D5A6;
+  --color-texto-principal: #34262C;
+  --color-texto-secundario: #6B5C68;
+  --color-blanco: #FFFFFF;
+  --color-whatsapp: #25D366;
+  --color-whatsapp-oscuro: #1DA851;
+  --color-borde-suave: #E6D9EE;
+  --color-overlay-morado: rgba(63, 39, 73, 0.9);
+
+  /* -- Tipografía -- */
+  --fuente-display: 'Fraunces', 'Georgia', serif;
+  --fuente-cuerpo: 'Manrope', -apple-system, sans-serif;
+
+  /* -- Escala tipográfica (1rem = 10px vía html{font-size:62.5%}) -- */
+  --texto-2xs: 1.2rem;
+  --texto-xs: 1.4rem;
+  --texto-sm: 1.6rem;
+  --texto-base: 1.8rem;
+  --texto-md: 2.2rem;
+  --texto-lg: 3.2rem;
+  --texto-xl: 4.4rem;
+  --texto-2xl: 6rem;
+
+  /* -- Espaciado -- */
+  --espacio-2xs: 0.8rem;
+  --espacio-xs: 1.2rem;
+  --espacio-sm: 2rem;
+  --espacio-md: 3.2rem;
+  --espacio-lg: 4.8rem;
+  --espacio-xl: 7.2rem;
+  --espacio-2xl: 10.4rem;
+
+  /* -- Bordes / sombras / transiciones -- */
+  --radio-suave: 1.8rem;
+  --radio-tarjeta: 2.4rem;
+  --radio-pildora: 999px;
+  --sombra-suave: 0 1.2rem 4rem rgba(63, 39, 73, 0.1);
+  --sombra-cta: 0 0.8rem 2.4rem rgba(37, 211, 102, 0.35);
+  --transicion-base: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* -- Contenedor -- */
+  --ancho-contenedor: 118rem;
+}
+
+/* Breakpoints de referencia (mobile-first):
+   --bp-xs:  0     (base)
+   --bp-sm:  48rem (768px)
+   --bp-md:  64rem (1024px)
+   --bp-lg:  90rem (1440px)
+   --bp-2xl: 120rem (1920px) */
+
+/* ==========================================================================
+   2. BASE — reset ligero + fundamentos
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 62.5%; /* 1rem = 10px, facilita cálculos de escala */
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: var(--fuente-cuerpo);
+  font-size: var(--texto-base);
+  line-height: 1.65;
+  color: var(--color-texto-principal);
+  background-color: var(--color-crema-fondo);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; text-decoration: none; }
+
+ul { list-style: none; }
+
+h1, h2, h3, h4 { font-family: var(--fuente-display); font-weight: 500; line-height: 1.15; color: var(--color-morado-profundo); }
+
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+/* Foco visible accesible en toda la página */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 0.3rem solid var(--color-dorado);
+  outline-offset: 0.3rem;
+  border-radius: 0.4rem;
+}
+
+.envoltorio-visualmente-oculto {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   3. LAYOUT — contenedores y utilidades estructurales
+   ========================================================================== */
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-contenedor);
+  margin-inline: auto;
+  padding-inline: var(--espacio-sm);
+}
+
+.seccion {
+  padding-block: var(--espacio-xl);
+}
+
+.seccion--lavanda { background-color: var(--color-lavanda-fondo); }
+
+.seccion__cabecera {
+  max-width: 68rem;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: var(--espacio-lg);
+}
+
+.seccion__ojo {
+  display: inline-block;
+  font-family: var(--fuente-cuerpo);
+  font-size: var(--texto-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-dorado);
+  margin-bottom: var(--espacio-xs);
+}
+
+.seccion__titulo { font-size: var(--texto-lg); margin-bottom: var(--espacio-sm); }
+
+.seccion__texto { font-size: var(--texto-base); color: var(--color-texto-secundario); }
+
+/* Revelado progresivo controlado por Intersection Observer (ver JS) */
+.js-revelar {
+  opacity: 0;
+  transform: translateY(2.4rem);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.js-revelar.es-visible { opacity: 1; transform: translateY(0); }
+
+/* ==========================================================================
+   4. COMPONENTES
+   ========================================================================== */
+
+/* --- Encabezado --- */
+.encabezado {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: rgba(251, 246, 239, 0.92);
+  backdrop-filter: blur(0.8rem);
+  border-bottom: 0.1rem solid var(--color-borde-suave);
+}
+
+.encabezado__contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--espacio-xs);
+}
+
+.marca { display: flex; flex-direction: column; line-height: 1.1; }
+.marca__nombre { font-family: var(--fuente-display); font-size: var(--texto-md); color: var(--color-morado-profundo); }
+.marca__firma { font-size: var(--texto-2xs); color: var(--color-dorado); letter-spacing: 0.08em; text-transform: uppercase; }
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.4rem 2.4rem;
+  border-radius: var(--radio-pildora);
+  font-size: var(--texto-sm);
+  font-weight: 700;
+  transition: transform var(--transicion-base), box-shadow var(--transicion-base);
+}
+.boton:hover { transform: translateY(-0.2rem); }
+
+.boton--whatsapp {
+  background-color: var(--color-whatsapp);
+  color: var(--color-blanco);
+  box-shadow: var(--sombra-cta);
+}
+.boton--whatsapp:hover { background-color: var(--color-whatsapp-oscuro); }
+
+.boton--fantasma {
+  border: 0.15rem solid var(--color-morado-profundo);
+  color: var(--color-morado-profundo);
+}
+
+.boton__icono { width: 1.8rem; height: 1.8rem; flex-shrink: 0; }
+
+.encabezado__cta-texto { display: none; }
+@media (min-width: 48em) { .encabezado__cta-texto { display: inline; } }
+
+/* --- Hero --- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--espacio-2xl) var(--espacio-xl);
+  background:
+    radial-gradient(60rem 40rem at 85% -10%, rgba(199, 174, 221, 0.35), transparent 60%),
+    var(--color-crema-fondo);
+}
+
+.hero__mandala {
+  position: absolute;
+  top: -12rem;
+  right: -14rem;
+  width: 46rem;
+  height: 46rem;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero__contenedor {
+  position: relative;
+  display: grid;
+  gap: var(--espacio-lg);
+  align-items: center;
+}
+@media (min-width: 64em) {
+  .hero__contenedor { grid-template-columns: 1.1fr 0.9fr; gap: var(--espacio-xl); }
+}
+
+.hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--color-blanco);
+  border: 0.1rem solid var(--color-borde-suave);
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radio-pildora);
+  font-size: var(--texto-xs);
+  font-weight: 600;
+  color: var(--color-morado-medio);
+  margin-bottom: var(--espacio-sm);
+}
+.hero__badge-punto { width: 0.8rem; height: 0.8rem; border-radius: 50%; background-color: var(--color-dorado); }
+
+.hero__titulo {
+  font-size: clamp(3.6rem, 5vw + 1rem, var(--texto-2xl));
+  margin-bottom: var(--espacio-sm);
+}
+.hero__titulo em { font-style: normal; color: var(--color-dorado); }
+
+.hero__subtitulo {
+  font-size: var(--texto-md);
+  color: var(--color-texto-secundario);
+  max-width: 52rem;
+  margin-bottom: var(--espacio-md);
+}
+
+.hero__modalidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espacio-xs);
+  margin-bottom: var(--espacio-md);
+}
+
+.pastilla-modalidad {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 1.8rem;
+  border-radius: var(--radio-pildora);
+  background-color: var(--color-lavanda-fondo);
+  border: 0.1rem solid var(--color-morado-claro);
+  font-size: var(--texto-xs);
+  font-weight: 600;
+  color: var(--color-morado-profundo);
+}
+
+.hero__acciones { display: flex; flex-wrap: wrap; gap: var(--espacio-xs); }
+
+.hero__nota { margin-top: var(--espacio-sm); font-size: var(--texto-xs); color: var(--color-texto-secundario); }
+
+.hero__visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radio-tarjeta);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+}
+
+/* Placeholder de foto: se reemplaza por la fotografía real de Isabela cuando esté disponible */
+.marcador-imagen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espacio-2xs);
+  text-align: center;
+  padding: var(--espacio-md);
+  background: linear-gradient(155deg, var(--color-morado-profundo), var(--color-morado-medio) 65%, var(--color-dorado) 140%);
+  color: var(--color-blanco);
+}
+.marcador-imagen__icono { width: 4.8rem; height: 4.8rem; opacity: 0.85; }
+.marcador-imagen__texto { font-size: var(--texto-xs); opacity: 0.85; max-width: 22rem; }
+
+/* --- Autoridad --- */
+.autoridad__grid {
+  display: grid;
+  gap: var(--espacio-lg);
+  align-items: start;
+}
+@media (min-width: 64em) {
+  .autoridad__grid { grid-template-columns: 0.85fr 1.15fr; }
+}
+
+.autoridad__retrato {
+  aspect-ratio: 3 / 4;
+  border-radius: var(--radio-tarjeta);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+}
+
+.autoridad__credencial {
+  display: flex;
+  gap: var(--espacio-xs);
+  padding: var(--espacio-sm) 0;
+  border-bottom: 0.1rem solid var(--color-borde-suave);
+}
+.autoridad__credencial:first-of-type { padding-top: 0; }
+.autoridad__credencial:last-of-type { border-bottom: none; }
+
+.autoridad__credencial-icono {
+  flex-shrink: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: var(--color-lavanda-fondo);
+  color: var(--color-morado-profundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autoridad__credencial-titulo { font-weight: 700; margin-bottom: 0.4rem; color: var(--color-texto-principal); }
+.autoridad__credencial-texto { font-size: var(--texto-sm); color: var(--color-texto-secundario); }
+
+.autoridad__disciplinas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: var(--espacio-md);
+}
+
+.chip-disciplina {
+  padding: 0.8rem 1.6rem;
+  border-radius: var(--radio-pildora);
+  background-color: var(--color-morado-profundo);
+  color: var(--color-blanco);
+  font-size: var(--texto-2xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.autoridad__respaldo {
+  margin-top: var(--espacio-md);
+  padding: var(--espacio-sm);
+  border-radius: var(--radio-suave);
+  background-color: var(--color-lavanda-fondo);
+  font-size: var(--texto-sm);
+  color: var(--color-morado-profundo);
+  font-weight: 600;
+}
+
+/* --- Puente problema/solución --- */
+.puente {
+  display: grid;
+  gap: var(--espacio-lg);
+}
+@media (min-width: 64em) { .puente { grid-template-columns: 1fr 1fr; } }
+
+.puente__tarjeta {
+  padding: var(--espacio-lg);
+  border-radius: var(--radio-tarjeta);
+}
+.puente__tarjeta--sin {
+  background-color: var(--color-blanco);
+  border: 0.1rem dashed var(--color-borde-suave);
+}
+.puente__tarjeta--con {
+  background-color: var(--color-morado-profundo);
+  color: var(--color-blanco);
+}
+.puente__tarjeta--con .puente__titulo { color: var(--color-blanco); }
+.puente__titulo { font-size: var(--texto-md); margin-bottom: var(--espacio-sm); }
+.puente__lista { display: flex; flex-direction: column; gap: var(--espacio-xs); }
+.puente__item { display: flex; gap: 1.2rem; font-size: var(--texto-sm); }
+.puente__tarjeta--con .puente__item { color: rgba(255,255,255,0.9); }
+
+/* --- Qué incluye: viaje de 5 sesiones (elemento firma) --- */
+.viaje {
+  position: relative;
+  margin-bottom: var(--espacio-xl);
+}
+
+.viaje__resumen {
+  text-align: center;
+  font-family: var(--fuente-display);
+  font-size: var(--texto-lg);
+  color: var(--color-morado-profundo);
+  margin-bottom: var(--espacio-lg);
+}
+.viaje__resumen strong { color: var(--color-dorado); }
+
+.viaje__linea {
+  display: grid;
+  gap: var(--espacio-md);
+  position: relative;
+}
+@media (min-width: 64em) {
+  .viaje__linea {
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--espacio-sm);
+  }
+  .viaje__linea::before {
+    content: "";
+    position: absolute;
+    top: 2.6rem;
+    left: 5%;
+    right: 5%;
+    height: 0.2rem;
+    background: repeating-linear-gradient(90deg, var(--color-dorado) 0 1.2rem, transparent 1.2rem 2.4rem);
+    z-index: 0;
+  }
+}
+
+.viaje__parada { position: relative; z-index: 1; text-align: center; }
+.viaje__numero {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin-inline: auto;
+  margin-bottom: var(--espacio-xs);
+  border-radius: 50%;
+  background-color: var(--color-blanco);
+  border: 0.2rem solid var(--color-dorado);
+  color: var(--color-morado-profundo);
+  font-family: var(--fuente-display);
+  font-size: var(--texto-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viaje__parada-titulo { font-size: var(--texto-sm); font-weight: 700; margin-bottom: 0.4rem; }
+.viaje__parada-texto { font-size: var(--texto-2xs); color: var(--color-texto-secundario); }
+
+.incluye__grid {
+  display: grid;
+  gap: var(--espacio-sm);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 48em) { .incluye__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 64em) { .incluye__grid { grid-template-columns: repeat(3, 1fr); } }
+
+.incluye__tarjeta {
+  background-color: var(--color-blanco);
+  border-radius: var(--radio-suave);
+  padding: var(--espacio-md);
+  box-shadow: var(--sombra-suave);
+  height: 100%;
+}
+.incluye__tarjeta-icono {
+  width: 4rem; height: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-lavanda-fondo);
+  color: var(--color-morado-profundo);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: var(--espacio-xs);
+}
+.incluye__tarjeta-titulo { font-size: var(--texto-base); font-weight: 700; margin-bottom: 0.6rem; color: var(--color-texto-principal); }
+.incluye__tarjeta-texto { font-size: var(--texto-sm); color: var(--color-texto-secundario); }
+
+.incluye__nota-valor {
+  margin-top: var(--espacio-lg);
+  padding: var(--espacio-md);
+  border-radius: var(--radio-suave);
+  background-color: var(--color-dorado-claro);
+  color: var(--color-morado-profundo);
+  font-size: var(--texto-sm);
+  text-align: center;
+}
+
+/* --- Diferencial --- */
+.diferencial__grid {
+  display: grid;
+  gap: var(--espacio-md);
+}
+@media (min-width: 64em) { .diferencial__grid { grid-template-columns: repeat(3, 1fr); } }
+
+.diferencial__tarjeta {
+  padding: var(--espacio-md);
+  border-radius: var(--radio-suave);
+  background-color: var(--color-blanco);
+  border-top: 0.4rem solid var(--color-dorado);
+}
+.diferencial__tarjeta-titulo { font-size: var(--texto-base); margin-bottom: 0.8rem; }
+.diferencial__tarjeta-texto { font-size: var(--texto-sm); color: var(--color-texto-secundario); }
+
+.diferencial__suelto {
+  margin-top: var(--espacio-lg);
+  text-align: center;
+  padding: var(--espacio-md);
+  border-radius: var(--radio-suave);
+  border: 0.15rem dashed var(--color-morado-claro);
+}
+.diferencial__suelto-texto { color: var(--color-texto-secundario); margin-bottom: var(--espacio-xs); }
+
+/* --- Precio --- */
+.precio__tarjeta {
+  max-width: 76rem;
+  margin-inline: auto;
+  background-color: var(--color-morado-profundo);
+  color: var(--color-blanco);
+  border-radius: var(--radio-tarjeta);
+  padding: var(--espacio-xl) var(--espacio-lg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.precio__tarjeta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(40rem 20rem at 100% 0%, rgba(199,174,221,0.25), transparent 70%);
+  pointer-events: none;
+}
+.precio__etiqueta { font-size: var(--texto-xs); text-transform: uppercase; letter-spacing: 0.14em; color: var(--color-dorado-claro); margin-bottom: var(--espacio-xs); }
+.precio__cifra { font-family: var(--fuente-display); font-size: clamp(4.8rem, 6vw, 7.2rem); margin-bottom: var(--espacio-xs); }
+.precio__cifra span { font-size: var(--texto-md); vertical-align: super; }
+.precio__incluye {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+  max-width: 46rem;
+  margin: var(--espacio-md) auto;
+  color: rgba(255,255,255,0.9);
+  font-size: var(--texto-sm);
+}
+.precio__incluye-item { display: flex; gap: 1rem; }
+
+/* --- Inscripción --- */
+.pasos {
+  display: grid;
+  gap: var(--espacio-md);
+  counter-reset: paso;
+}
+@media (min-width: 48em) { .pasos { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 90em) { .pasos { grid-template-columns: repeat(4, 1fr); } }
+
+.pasos__item {
+  counter-increment: paso;
+  position: relative;
+  padding: var(--espacio-md);
+  background-color: var(--color-blanco);
+  border-radius: var(--radio-suave);
+  box-shadow: var(--sombra-suave);
+}
+.pasos__item::before {
+  content: counter(paso);
+  display: flex; align-items: center; justify-content: center;
+  width: 3.6rem; height: 3.6rem;
+  border-radius: 50%;
+  background-color: var(--color-dorado);
+  color: var(--color-blanco);
+  font-family: var(--fuente-display);
+  font-size: var(--texto-base);
+  margin-bottom: var(--espacio-sm);
+}
+.pasos__titulo { font-size: var(--texto-sm); font-weight: 700; margin-bottom: 0.6rem; color: var(--color-texto-principal); }
+.pasos__texto { font-size: var(--texto-xs); color: var(--color-texto-secundario); }
+
+/* --- Ubicaciones --- */
+.ubicaciones__grid {
+  display: grid;
+  gap: var(--espacio-sm);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 48em) { .ubicaciones__grid { grid-template-columns: repeat(3, 1fr); } }
+
+.ubicacion {
+  padding: var(--espacio-md);
+  border-radius: var(--radio-suave);
+  background-color: var(--color-blanco);
+  border: 0.1rem solid var(--color-borde-suave);
+  text-align: center;
+}
+.ubicacion__icono { width: 3.2rem; height: 3.2rem; margin-inline: auto; margin-bottom: var(--espacio-xs); color: var(--color-morado-medio); }
+.ubicacion__ciudad { font-weight: 700; margin-bottom: 0.4rem; }
+.ubicacion__region { font-size: var(--texto-xs); color: var(--color-texto-secundario); }
+
+.ubicaciones__gira {
+  margin-top: var(--espacio-md);
+  text-align: center;
+  font-size: var(--texto-sm);
+  color: var(--color-texto-secundario);
+}
+.ubicaciones__gira strong { color: var(--color-morado-profundo); }
+
+/* --- FAQ / políticas --- */
+.faq { max-width: 84rem; margin-inline: auto; display: flex; flex-direction: column; gap: var(--espacio-xs); }
+
+.faq__item {
+  background-color: var(--color-blanco);
+  border-radius: var(--radio-suave);
+  border: 0.1rem solid var(--color-borde-suave);
+  overflow: hidden;
+}
+
+.faq__pregunta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espacio-sm);
+  padding: var(--espacio-sm) var(--espacio-md);
+  font-size: var(--texto-base);
+  font-weight: 700;
+  text-align: left;
+  color: var(--color-morado-profundo);
+}
+
+.faq__icono { flex-shrink: 0; width: 2rem; height: 2rem; transition: transform var(--transicion-base); }
+.faq__pregunta[aria-expanded="true"] .faq__icono { transform: rotate(45deg); }
+
+.faq__respuesta {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--transicion-base);
+}
+.faq__respuesta-interior { overflow: hidden; }
+.faq__item.es-abierto .faq__respuesta { grid-template-rows: 1fr; }
+.faq__respuesta-texto { padding: 0 var(--espacio-md) var(--espacio-md); font-size: var(--texto-sm); color: var(--color-texto-secundario); }
+
+/* --- CTA final --- */
+.cta-final {
+  background: linear-gradient(155deg, var(--color-morado-profundo), #2A1930);
+  color: var(--color-blanco);
+  text-align: center;
+  padding-block: var(--espacio-2xl);
+}
+.cta-final__titulo { color: var(--color-blanco); font-size: clamp(3rem, 4vw, var(--texto-xl)); margin-bottom: var(--espacio-sm); }
+.cta-final__texto { color: rgba(255,255,255,0.8); max-width: 56rem; margin-inline: auto; margin-bottom: var(--espacio-md); }
+
+/* --- Pie de página --- */
+.pie { padding-block: var(--espacio-lg); border-top: 0.1rem solid var(--color-borde-suave); }
+.pie__grid { display: flex; flex-direction: column; gap: var(--espacio-md); }
+@media (min-width: 64em) { .pie__grid { flex-direction: row; justify-content: space-between; align-items: flex-start; } }
+.pie__marca { font-family: var(--fuente-display); font-size: var(--texto-md); color: var(--color-morado-profundo); margin-bottom: 0.8rem; }
+.pie__texto { font-size: var(--texto-xs); color: var(--color-texto-secundario); max-width: 40rem; }
+.pie__privacidad { margin-top: var(--espacio-sm); font-size: var(--texto-2xs); color: var(--color-texto-secundario); }
+.pie__legal { margin-top: var(--espacio-lg); padding-top: var(--espacio-sm); border-top: 0.1rem solid var(--color-borde-suave); font-size: var(--texto-2xs); color: var(--color-texto-secundario); text-align: center; }
+
+/* --- Botón flotante de WhatsApp --- */
+.whatsapp-flotante {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: var(--color-whatsapp);
+  color: var(--color-blanco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--sombra-cta);
+  transition: transform var(--transicion-base);
+}
+.whatsapp-flotante:hover { transform: scale(1.08); }
+.whatsapp-flotante svg { width: 2.8rem; height: 2.8rem; }
+</style>
+</head>
+<body>
+
+<!-- ==========================================================================
+     ENCABEZADO
+     ========================================================================== -->
+<header class="encabezado">
+  <div class="contenedor encabezado__contenedor">
+    <p class="marca">
+      <span class="marca__nombre">Mundo Holístico</span>
+      <span class="marca__firma">Isabela Owl</span>
+    </p>
+    <a class="boton boton--whatsapp" id="cta-encabezado"
+       href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Contact Isabela Owl on WhatsApp">
+      <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+      <span class="encabezado__cta-texto">Message on WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="contenido-principal">
+
+  <!-- ==========================================================================
+       HERO
+       ========================================================================== -->
+  <section class="hero">
+    <svg class="hero__mandala" viewBox="0 0 400 400" fill="none" aria-hidden="true">
+      <circle cx="200" cy="200" r="180" stroke="#B98D3E" stroke-width="1" opacity="0.5"/>
+      <circle cx="200" cy="200" r="140" stroke="#7C5A96" stroke-width="1" opacity="0.5"/>
+      <circle cx="200" cy="200" r="100" stroke="#B98D3E" stroke-width="1" opacity="0.5"/>
+      <circle cx="200" cy="200" r="60" stroke="#7C5A96" stroke-width="1" opacity="0.5"/>
+    </svg>
+    <div class="contenedor hero__contenedor">
+      <div class="hero__columna-texto js-revelar">
+        <span class="hero__badge"><span class="hero__badge-punto" aria-hidden="true"></span>25 hours, 5 sessions, one guide</span>
+        <h1 class="hero__titulo">An integrative path back to <em>yourself</em>, guided by Isabela Owl</h1>
+        <p class="hero__subtitulo">Hypnotherapy, past-life and ancestral regression, mind-body assessment, and Kriya meditation — woven into a single personal process, designed and led entirely by one therapist with nearly two decades of experience.</p>
+        <div class="hero__modalidades">
+          <span class="pastilla-modalidad">✦ In-person sessions</span>
+          <span class="pastilla-modalidad">✦ Live via Zoom</span>
+        </div>
+        <div class="hero__acciones">
+          <a class="boton boton--whatsapp" href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO" target="_blank" rel="noopener noreferrer">
+            <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+            Start on WhatsApp
+          </a>
+          <a class="boton boton--fantasma" href="#que-incluye">See what's included</a>
+        </div>
+        <p class="hero__nota">No open enrollment dates — availability is coordinated directly, one person at a time.</p>
+      </div>
+      <div class="hero__visual js-revelar" aria-hidden="false">
+        <div class="marcador-imagen" role="img" aria-label="Placeholder for Isabela Owl's portrait photograph — to be replaced when delivered">
+          <svg class="marcador-imagen__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>
+          <p class="marcador-imagen__texto">Photo of Isabela Owl — pending delivery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       AUTORIDAD
+       ========================================================================== -->
+  <section class="seccion" id="isabela" aria-labelledby="titulo-autoridad">
+    <div class="contenedor autoridad__grid">
+      <div class="autoridad__retrato js-revelar">
+        <div class="marcador-imagen" role="img" aria-label="Placeholder for a photograph of Isabela Owl in session — to be replaced when delivered">
+          <svg class="marcador-imagen__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/><circle cx="12" cy="12" r="4"/></svg>
+          <p class="marcador-imagen__texto">Session photo — pending delivery</p>
+        </div>
+      </div>
+      <div class="js-revelar">
+        <span class="seccion__ojo">Who is guiding you</span>
+        <h2 id="titulo-autoridad" class="seccion__titulo">Nearly two decades in the room — as a therapist and as a teacher</h2>
+        <p class="seccion__texto" style="margin-bottom: var(--espacio-md);">Isabela Owl is a certified hypnotherapist and a certified instructor, trained through the Palo Alto School of Hypnotherapy and the University of California. She has spent almost twenty years working one-on-one with clients and training the next generation of therapists — which is why every session carries a depth that comes only from having done this thousands of times.</p>
+
+        <div class="autoridad__credencial">
+          <span class="autoridad__credencial-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3-5.5-3-5.5 3 1-6.3L3 8.9 9 8z"/></svg>
+          </span>
+          <div>
+            <p class="autoridad__credencial-titulo">Multidisciplinary training</p>
+            <p class="autoridad__credencial-texto">Family constellations, systemic therapy, a master's degree in hypnotherapy, past-life and ancestral-line regression, and money psychology — all folded into one integrated lens.</p>
+          </div>
+        </div>
+
+        <div class="autoridad__credencial">
+          <span class="autoridad__credencial-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <div>
+            <p class="autoridad__credencial-titulo">Certified meditation instructor</p>
+            <p class="autoridad__credencial-texto">Trained in the Kriya technique within the meditation philosophy of Paramahansa Yogananda, and teaches it as part of the program.</p>
+          </div>
+        </div>
+
+        <div class="autoridad__credencial">
+          <span class="autoridad__credencial-icono" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c-4-3-8-6.5-8-11a5 5 0 0 1 8-4 5 5 0 0 1 8 4c0 4.5-4 8-8 11Z"/></svg>
+          </span>
+          <div>
+            <p class="autoridad__credencial-titulo">A method that adapts to you</p>
+            <p class="autoridad__credencial-texto">No two therapies run the same protocol — but Isabela's hypnotherapy signature carries through every one of them, whatever the root of the issue turns out to be.</p>
+          </div>
+        </div>
+
+        <div class="autoridad__disciplinas" aria-label="Disciplines and approaches">
+          <span class="chip-disciplina">Family constellations</span>
+          <span class="chip-disciplina">Systemic therapy</span>
+          <span class="chip-disciplina">Master's in hypnotherapy</span>
+          <span class="chip-disciplina">Past-life regression</span>
+          <span class="chip-disciplina">Ancestral-line work</span>
+          <span class="chip-disciplina">Money psychology</span>
+        </div>
+
+        <p class="autoridad__respaldo">Backed by hundreds of testimonials — from therapy clients and from students trained by Isabela.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PUENTE PROBLEMA / SOLUCIÓN
+       ========================================================================== -->
+  <section class="seccion seccion--lavanda">
+    <div class="contenedor">
+      <div class="seccion__cabecera js-revelar">
+        <span class="seccion__ojo">Why this feels different</span>
+        <h2 class="seccion__titulo">One guided process, instead of five separate appointments</h2>
+      </div>
+      <div class="puente">
+        <div class="puente__tarjeta puente__tarjeta--sin js-revelar">
+          <h3 class="puente__titulo">Piecing it together yourself</h3>
+          <ul class="puente__lista">
+            <li class="puente__item">✕ A hypnotherapist for one part, a nutritionist for another</li>
+            <li class="puente__item">✕ Coordinating separate calendars, intake forms, and price lists</li>
+            <li class="puente__item">✕ No one connecting the dots between sessions</li>
+            <li class="puente__item">✕ More time spent, more money spent, less coherence</li>
+          </ul>
+        </div>
+        <div class="puente__tarjeta puente__tarjeta--con js-revelar">
+          <h3 class="puente__titulo">One person, one thread</h3>
+          <ul class="puente__lista">
+            <li class="puente__item">✓ Isabela designs and leads every part herself</li>
+            <li class="puente__item">✓ One case file that evolves session over session</li>
+            <li class="puente__item">✓ Nearly 20 years of clinical judgment applied to your case</li>
+            <li class="puente__item">✓ A single, coherent process — start to finish</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       QUÉ INCLUYE
+       ========================================================================== -->
+  <section class="seccion" id="que-incluye" aria-labelledby="titulo-incluye">
+    <div class="contenedor">
+      <div class="seccion__cabecera js-revelar">
+        <span class="seccion__ojo">What's included</span>
+        <h2 id="titulo-incluye" class="seccion__titulo">Five sessions. Twenty-five hours dedicated to you.</h2>
+        <p class="seccion__texto">Each session is roughly 2.5 hours of live, one-on-one work — plus everything Isabela does between sessions to prepare the next one.</p>
+      </div>
+
+      <div class="viaje">
+        <div class="viaje__linea" role="list" aria-label="The five-session journey">
+          <div class="viaje__parada" role="listitem"><span class="viaje__numero">1</span><p class="viaje__parada-titulo">Session 1</p><p class="viaje__parada-texto">Intake &amp; hypnotherapy</p></div>
+          <div class="viaje__parada" role="listitem"><span class="viaje__numero">2</span><p class="viaje__parada-titulo">Session 2</p><p class="viaje__parada-texto">Mind-body assessment</p></div>
+          <div class="viaje__parada" role="listitem"><span class="viaje__numero">3</span><p class="viaje__parada-titulo">Session 3</p><p class="viaje__parada-texto">Regression work</p></div>
+          <div class="viaje__parada" role="listitem"><span class="viaje__numero">4</span><p class="viaje__parada-titulo">Session 4</p><p class="viaje__parada-texto">Integration &amp; resourcing</p></div>
+          <div class="viaje__parada" role="listitem"><span class="viaje__numero">5</span><p class="viaje__parada-titulo">Session 5</p><p class="viaje__parada-texto">Kriya meditation close</p></div>
+        </div>
+      </div>
+
+      <div class="incluye__grid">
+        <div class="incluye__tarjeta js-revelar">
+          <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3 class="incluye__tarjeta-titulo">1:1 therapy, live</h3>
+          <p class="incluye__tarjeta-texto">Hypnotherapy, regression, and analysis — roughly 2.5 hours of direct work with Isabela in each session.</p>
+        </div>
+        <div class="incluye__tarjeta js-revelar">
+          <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+          <h3 class="incluye__tarjeta-titulo">Mind-body assessment</h3>
+          <p class="incluye__tarjeta-texto">A look at habits and gut-microbiome patterns — the gut-brain connection. This is a habits diagnostic, not a diet plan.</p>
+        </div>
+        <div class="incluye__tarjeta js-revelar">
+          <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg></span>
+          <h3 class="incluye__tarjeta-titulo">Galvanic scan</h3>
+          <p class="incluye__tarjeta-texto">A body-mind screening technology used to look at organs, microbiome, and parasites as part of one connected picture.</p>
+        </div>
+        <div class="incluye__tarjeta js-revelar">
+          <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+          <h3 class="incluye__tarjeta-titulo">Kriya meditation + masterclass</h3>
+          <p class="incluye__tarjeta-texto">Instruction in the Kriya technique, plus a dedicated meditation masterclass, included in the program.</p>
+        </div>
+        <div class="incluye__tarjeta js-revelar">
+          <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5a2 2 0 0 1 2-2h10l4 4v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span>
+          <h3 class="incluye__tarjeta-titulo">Isabela's work behind the scenes</h3>
+          <p class="incluye__tarjeta-texto">Between sessions, Isabela builds your case file, reviews assessments, and prepares resources for what comes next. This preparation is part of what you're paying for.</p>
+        </div>
+        <div class="incluye__tarjeta js-revelar">
+          <span class="incluye__tarjeta-icono" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a9 9 0 1 0 9 9"/><path d="M12 3v9l6 3"/></svg></span>
+          <h3 class="incluye__tarjeta-titulo">Weekly resources + personalized audio</h3>
+          <p class="incluye__tarjeta-texto">Homework to keep the progress moving between sessions, plus a personalized hypnotherapy audio after every session to reinforce the work.</p>
+        </div>
+      </div>
+
+      <p class="incluye__nota-valor js-revelar">Every part of this — the live sessions, the assessments, and the work Isabela does between them — is designed as one continuous process, not five disconnected appointments.</p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       DIFERENCIAL
+       ========================================================================== -->
+  <section class="seccion seccion--lavanda">
+    <div class="contenedor">
+      <div class="seccion__cabecera js-revelar">
+        <span class="seccion__ojo">The difference</span>
+        <h2 class="seccion__titulo">Why one guide, instead of several specialists</h2>
+      </div>
+      <div class="diferencial__grid">
+        <div class="diferencial__tarjeta js-revelar">
+          <h3 class="diferencial__tarjeta-titulo">Time</h3>
+          <p class="diferencial__tarjeta-texto">Booking separate specialists for hypnotherapy, a gut-health assessment, and meditation instruction means juggling several calendars instead of one guided path.</p>
+        </div>
+        <div class="diferencial__tarjeta js-revelar">
+          <h3 class="diferencial__tarjeta-titulo">Money</h3>
+          <p class="diferencial__tarjeta-texto">Paying each professional separately typically costs more overall than one integrated program built around a single case file.</p>
+        </div>
+        <div class="diferencial__tarjeta js-revelar">
+          <h3 class="diferencial__tarjeta-titulo">Coherence</h3>
+          <p class="diferencial__tarjeta-texto">Nearly two decades of multidisciplinary experience means every session builds on the last — instead of starting over with a new professional each time.</p>
+        </div>
+      </div>
+      <div class="diferencial__suelto js-revelar">
+        <p class="diferencial__suelto-texto">Not ready for the full program? Single sessions and a stand-alone evaluation consultation are also available.</p>
+        <a class="boton boton--fantasma" href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO" target="_blank" rel="noopener noreferrer">Ask about single sessions on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRECIO
+       ========================================================================== -->
+  <section class="seccion" id="precio" aria-labelledby="titulo-precio">
+    <div class="contenedor">
+      <div class="precio__tarjeta js-revelar">
+        <p class="precio__etiqueta">The full integrative program</p>
+        <h2 id="titulo-precio" class="precio__cifra"><span>$</span>2,500<span> USD</span></h2>
+        <p style="color: rgba(255,255,255,0.85); max-width: 40rem; margin-inline:auto;">Everything below is included — this is one program, not a menu of add-ons.</p>
+        <div class="precio__incluye">
+          <p class="precio__incluye-item">✓ 5 live sessions — 25 hours of dedicated work</p>
+          <p class="precio__incluye-item">✓ Mind-body assessment &amp; galvanic scan</p>
+          <p class="precio__incluye-item">✓ Kriya meditation technique + masterclass</p>
+          <p class="precio__incluye-item">✓ Personalized hypnotherapy audio after each session</p>
+          <p class="precio__incluye-item">✓ Weekly resources and Isabela's preparation between sessions</p>
+        </div>
+        <a class="boton boton--whatsapp" href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO" target="_blank" rel="noopener noreferrer">
+          <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+          Reserve my spot on WhatsApp
+        </a>
+        <p style="margin-top: var(--espacio-sm); font-size: var(--texto-xs); color: rgba(255,255,255,0.7);">No fixed dates are published — availability is confirmed directly on WhatsApp. Booking ahead makes a payment plan possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CÓMO INSCRIBIRSE
+       ========================================================================== -->
+  <section class="seccion seccion--lavanda" id="inscripcion" aria-labelledby="titulo-inscripcion">
+    <div class="contenedor">
+      <div class="seccion__cabecera js-revelar">
+        <span class="seccion__ojo">How to enroll</span>
+        <h2 id="titulo-inscripcion" class="seccion__titulo">Four steps, all coordinated on WhatsApp</h2>
+      </div>
+      <div class="pasos">
+        <div class="pasos__item js-revelar">
+          <p class="pasos__titulo">Message on WhatsApp</p>
+          <p class="pasos__texto">Reach out to confirm you're ready and to find a date that works for both of you.</p>
+        </div>
+        <div class="pasos__item js-revelar">
+          <p class="pasos__titulo">Choose Zelle or card</p>
+          <p class="pasos__texto">Payment is coordinated directly by WhatsApp — Zelle or credit card.</p>
+        </div>
+        <div class="pasos__item js-revelar">
+          <p class="pasos__titulo">Send your receipt</p>
+          <p class="pasos__texto">After paying, send the proof of payment on WhatsApp.</p>
+        </div>
+        <div class="pasos__item js-revelar">
+          <p class="pasos__titulo">Receive your Zoom link</p>
+          <p class="pasos__texto">Your session link is sent once payment is confirmed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       UBICACIONES
+       ========================================================================== -->
+  <section class="seccion" aria-labelledby="titulo-ubicaciones">
+    <div class="contenedor">
+      <div class="seccion__cabecera js-revelar">
+        <span class="seccion__ojo">Where sessions happen</span>
+        <h2 id="titulo-ubicaciones" class="seccion__titulo">In-person, or from wherever you are</h2>
+      </div>
+      <div class="ubicaciones__grid">
+        <div class="ubicacion js-revelar">
+          <svg class="ubicacion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <p class="ubicacion__ciudad">Mount Shasta</p>
+          <p class="ubicacion__region">California</p>
+        </div>
+        <div class="ubicacion js-revelar">
+          <svg class="ubicacion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <p class="ubicacion__ciudad">Palo Alto</p>
+          <p class="ubicacion__region">California</p>
+        </div>
+        <div class="ubicacion js-revelar">
+          <svg class="ubicacion__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <p class="ubicacion__ciudad">Zaragoza</p>
+          <p class="ubicacion__region">Spain</p>
+        </div>
+      </div>
+      <p class="ubicaciones__gira js-revelar">Isabela also travels occasionally to other U.S. cities, including <strong>Miami, Los Angeles, San Francisco, and New York</strong>. <a href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO" target="_blank" rel="noopener noreferrer" style="text-decoration: underline; color: var(--color-morado-profundo);">Contact us to see if she'll be in your city.</a></p>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ / POLÍTICAS
+       ========================================================================== -->
+  <section class="seccion seccion--lavanda" id="faq" aria-labelledby="titulo-faq">
+    <div class="contenedor">
+      <div class="seccion__cabecera js-revelar">
+        <span class="seccion__ojo">Good to know</span>
+        <h2 id="titulo-faq" class="seccion__titulo">Dates, payment, and cancellation policy</h2>
+      </div>
+      <div class="faq">
+
+        <div class="faq__item">
+          <button class="faq__pregunta" aria-expanded="false">
+            <span>Are there fixed program dates?</span>
+            <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">No open dates are published. Every start date is coordinated directly on WhatsApp based on mutual availability, so it's worth reaching out early — booking ahead also makes a payment plan possible.</p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__pregunta" aria-expanded="false">
+            <span>How do I pay, and what happens after?</span>
+            <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Payment is by Zelle or credit card, coordinated on WhatsApp. Once you've paid, send your receipt on WhatsApp and you'll receive your Zoom session link.</p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__pregunta" aria-expanded="false">
+            <span>What's the cancellation policy?</span>
+            <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Payments are non-refundable. We recommend paying about three months ahead of your start date. Rescheduling is possible with at least three days' notice before a session.</p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__pregunta" aria-expanded="false">
+            <span>Can I book a single session instead of the full program?</span>
+            <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">Yes — single sessions and a stand-alone evaluation consultation are available for anyone not ready for the full program. Pricing and availability for these are shared directly on WhatsApp.</p></div></div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__pregunta" aria-expanded="false">
+            <span>Is my personal information collected on this site?</span>
+            <svg class="faq__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq__respuesta"><div class="faq__respuesta-interior"><p class="faq__respuesta-texto">No personal information is collected through this page. All coordination — dates, payment, and follow-up — happens directly with Isabela on WhatsApp.</p></div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       CTA FINAL
+       ========================================================================== -->
+  <section class="cta-final">
+    <div class="contenedor">
+      <h2 class="cta-final__titulo js-revelar">Ready to begin?</h2>
+      <p class="cta-final__texto js-revelar">Write to Isabela directly on WhatsApp to check availability and take the first step.</p>
+      <a class="boton boton--whatsapp js-revelar" href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO" target="_blank" rel="noopener noreferrer">
+        <svg class="boton__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+        Message Isabela on WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     PIE DE PÁGINA
+     ========================================================================== -->
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div>
+      <p class="pie__marca">Mundo Holístico USA</p>
+      <p class="pie__texto">The integrative program of Isabela Owl — hypnotherapy, regression, mind-body assessment, and Kriya meditation, guided personally from start to finish.</p>
+      <p class="pie__privacidad">No personal information is collected through this page. All coordination happens directly on WhatsApp.</p>
+    </div>
+    <div>
+      <p class="pie__texto"><strong>Mount Shasta · Palo Alto · Zaragoza</strong><br>Occasional tours: Miami, Los Angeles, San Francisco, New York</p>
+    </div>
+  </div>
+  <p class="pie__legal">© <span id="anio-actual">2026</span> Mundo Holístico USA. All rights reserved.</p>
+</footer>
+
+<!-- Botón flotante de WhatsApp, visible en todo momento -->
+<a class="whatsapp-flotante" href="https://api.whatsapp.com/send?phone=NUMERO_WHATSAPP&amp;text=MENSAJE_PRECARGADO" target="_blank" rel="noopener noreferrer" aria-label="Message Isabela Owl on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2Zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.44-1.08-2.74 0-1.3.68-1.94.93-2.2.22-.24.5-.3.66-.3h.48c.15 0 .36-.03.55.42.22.53.75 1.83.82 1.96.07.13.11.29.02.47-.09.18-.14.29-.27.45-.13.15-.28.34-.4.46-.13.13-.27.27-.12.53.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.11 1.3.27.13.42.11.58-.07.16-.18.68-.79.86-1.06.18-.27.36-.22.6-.13.24.09 1.55.73 1.82.86.27.13.45.2.51.31.07.11.07.62-.15 1.24Z"/></svg>
+</a>
+
+<script>
+/**
+ * ==========================================================================
+ * SCRIPT PRINCIPAL DE LA LANDING — Mundo Holístico USA / Isabela Owl
+ * Funciones puras donde es posible, delegación de eventos, sin dependencias.
+ * ==========================================================================
+ */
+(() => {
+  'use strict';
+
+  /**
+   * Configura el revelado progresivo de elementos al hacer scroll
+   * usando Intersection Observer, evitando animar todo de una vez.
+   * @returns {void}
+   */
+  const inicializarRevelado = () => {
+    const elementosARevelar = document.querySelectorAll('.js-revelar');
+    if (!('IntersectionObserver' in window) || elementosARevelar.length === 0) {
+      elementosARevelar.forEach((elemento) => elemento.classList.add('es-visible'));
+      return;
+    }
+
+    const observador = new IntersectionObserver(
+      (entradas, observadorActual) => {
+        entradas.forEach((entrada) => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add('es-visible');
+            observadorActual.unobserve(entrada.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -5% 0px' }
+    );
+
+    elementosARevelar.forEach((elemento) => observador.observe(elemento));
+  };
+
+  /**
+   * Activa el acordeón del FAQ mediante delegación de eventos:
+   * un solo listener en el contenedor en vez de uno por pregunta.
+   * @returns {void}
+   */
+  const inicializarAcordeonFaq = () => {
+    const contenedorFaq = document.querySelector('.faq');
+    if (!contenedorFaq) return;
+
+    contenedorFaq.addEventListener('click', (evento) => {
+      const botonPregunta = evento.target.closest('.faq__pregunta');
+      if (!botonPregunta) return;
+
+      const itemFaq = botonPregunta.closest('.faq__item');
+      const estaAbierto = itemFaq.classList.contains('es-abierto');
+
+      itemFaq.classList.toggle('es-abierto', !estaAbierto);
+      botonPregunta.setAttribute('aria-expanded', String(!estaAbierto));
+    });
+  };
+
+  /**
+   * Actualiza el año del pie de página automáticamente,
+   * para que el copyright no quede desactualizado.
+   * @returns {void}
+   */
+  const actualizarAnioPie = () => {
+    const elementoAnio = document.getElementById('anio-actual');
+    if (elementoAnio) {
+      elementoAnio.textContent = String(new Date().getFullYear());
+    }
+  };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    inicializarRevelado();
+    inicializarAcordeonFaq();
+    actualizarAnioPie();
+  });
+})();
+</script>
+
+</body>
+</html>
