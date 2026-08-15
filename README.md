@@ -1,110 +1,94 @@
-<h1 align="center">Isabela Owl Servicios</h1>
+# Isabela Tena | Programa Integral
 
-<p align="center">
-  Landing page premium para el programa integrativo de Isabela Owl
-</p>
+Landing bilingue para el programa integral de transformacion de Isabela Tena,
+publicada en ingles y espanol bajo la marca Mundo Holistico USA.
 
-<p align="center">
-  <a href="#"><img alt="Estado" src="https://img.shields.io/badge/estado-produccion-1f6feb"></a>
-  <a href="#"><img alt="Frontend" src="https://img.shields.io/badge/frontend-HTML%2FCSS%2FJS-7a3cff"></a>
-  <a href="#"><img alt="Idioma" src="https://img.shields.io/badge/idioma-EN%20%7C%20ES-0f766e"></a>
-  <a href="#"><img alt="Licencia" src="https://img.shields.io/badge/licencia-privada-111827"></a>
-</p>
+## Caracteristicas
 
----
+- Pagina en ingles: `index.html`.
+- Pagina en espanol: `index-es.html`.
+- Diseno responsive mobile-first.
+- Navegacion movil accesible y acordeon de preguntas frecuentes.
+- Animaciones progresivas y contadores con soporte para
+  `prefers-reduced-motion`.
+- Enlaces contextuales de WhatsApp con el numero de contacto configurado.
+- Metadatos SEO, Open Graph, Twitter Cards y datos estructurados JSON-LD.
+- Favicon multiplataforma basado en el logo oficial de Mundo Holistico USA.
 
-## Vision del proyecto
-
-Este proyecto presenta una experiencia web sobria, elegante y orientada a conversion para promocionar los servicios profesionales de Isabela Owl.
-
-La landing esta construida con foco en:
-
-- Diseno de alta confianza
-- Narrativa clara del servicio
-- Conversion por WhatsApp
-- Rendimiento y accesibilidad
-
----
-
-## Experiencia destacada
-
-### 1) Identidad visual premium
-Paleta editorial, tipografia cuidada y ritmo visual consistente entre secciones.
-
-### 2) Conversion guiada
-CTA estrategicos en encabezado, hero, precio y cierre para facilitar contacto inmediato.
-
-### 3) Navegacion bilingue
-Version principal en ingles y version completa en espanol con selector de idioma.
-
-### 4) Interacciones modernas
-Animaciones suaves con enfoque en legibilidad, sin sacrificar rendimiento.
-
-### 5) Accesibilidad real
-Estructura semantica, navegacion por teclado y mejoras de usabilidad en menu movil.
-
----
-
-## Estructura del repositorio
+## Estructura
 
 ```text
 isabela-owl/
-├─ index.html
-├─ index-es.html
-├─ README.md
-├─ claude-landing-isabela-owl.html
-├─ qwen-landing-isabela-owl.html
-├─ css/
-│  └─ estilos.css
-├─ js/
-│  └─ aplicacion.js
-└─ img/
+|-- index.html
+|-- index-es.html
+|-- css/
+|   `-- estilos.css
+|-- js/
+|   `-- aplicacion.js
+|-- img/
+|   |-- logo-Mundoholistico.png
+|   |-- isabela-tena-alt.JPG
+|   |-- isabela-tena-pic.JPG
+|   |-- isabela-tena.JPG
+|   `-- zoom.png
+|-- favicon.ico
+|-- favicon-16x16.png
+|-- favicon-32x32.png
+|-- favicon-180x180.png
+|-- favicon-192x192.png
+|-- favicon-512x512.png
+`-- site.webmanifest
 ```
 
----
+Las paginas principales comparten `css/estilos.css` y
+`js/aplicacion.js`. Las imagenes se sirven desde `img/` y no dependen de un
+proceso de compilacion.
 
-## Stack tecnologico
+## Ejecucion local
 
-- HTML5 semantico
-- CSS3 (arquitectura modular, responsive y mobile-first)
-- JavaScript moderno (interacciones y animaciones)
-- Integracion de WhatsApp para conversion directa
+El sitio es estatico. Para evitar restricciones del navegador con modulos ES,
+ejecuta un servidor local desde la raiz del proyecto:
 
----
-
-## Flujo local de trabajo
-
-### 1) Clonar
-
-```bash
-git clone https://github.com/MaickR/isabela-owl-servicios.git
-cd isabela-owl-servicios
+```powershell
+python -m http.server 8000
 ```
 
-### 2) Ejecutar en local
+Despues abre:
 
-Abrir `index.html` o `index-es.html` en navegador.
+- `http://localhost:8000/index.html`
+- `http://localhost:8000/index-es.html`
 
-### 3) Publicar cambios
+Tambien puede utilizarse cualquier servidor estatico equivalente.
 
-```bash
+## Publicacion
+
+El repositorio remoto configurado es:
+
+```text
+https://github.com/MaickR/isabela-owl-servicios.git
+```
+
+Para publicar cambios:
+
+```powershell
 git add .
-git commit -m "Tu mensaje de commit en espanol"
+git commit -m "Describe el cambio realizado"
 git push origin main
 ```
 
----
+## Convenciones
 
-## Calidad y criterios de entrega
+- Mantener el contenido visible de cada pagina en su idioma correspondiente.
+- Conservar las clases BEM y la nomenclatura de codigo existente en espanol.
+- Actualizar las dos paginas cuando el cambio afecte a la experiencia comun.
+- No modificar los mensajes contextuales de WhatsApp al cambiar unicamente el
+  numero de contacto.
+- Mantener dimensiones explicitas y `alt` descriptivos en las imagenes.
 
-- Coherencia visual entre desktop, tablet y movil
-- Copy de venta profesional y consistente
-- Navegacion clara y tiempos de carga optimizados
-- Mantenimiento simple con estructura limpia
+## Tecnologias
 
----
-
-## Nota de autoria
-
-Desarrollado para la marca Mundo Holistico USA.
-Repositorio de trabajo: `MaickR/isabela-owl-servicios`.
+- HTML5 semantico.
+- CSS3 responsive con variables de diseno.
+- JavaScript ES2026+ como modulo nativo.
+- Anime.js cargado desde CDN para animaciones puntuales.
+- Schema.org JSON-LD para informacion del servicio.
