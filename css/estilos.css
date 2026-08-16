@@ -19,21 +19,28 @@
    $bp-lg: 90rem (1440px) | $bp-2xl: 120rem (1920px)
    ============================================================================== */
 :root {
-  /* -- Color: crema cálido + morado profundo + dorado (identidad espiritual-profesional) -- */
-  --color-crema-fondo: #FBF6EF;
-  --color-lavanda-fondo: #F2E9F7;
-  --color-morado-profundo: #3F2749;
-  --color-morado-oscuro: #2A1930;
-  --color-morado-medio: #7C5A96;
-  --color-morado-claro: #C7AEDD;
-  --color-dorado: #B98D3E;
-  --color-dorado-claro: #E7D5A6;
-  --color-texto-principal: #34262C;
-  --color-texto-secundario: #6B5C68;
+  /* -- Paleta oficial Mundo Holístico USA (extraída de mundoholisticousa.com) -- */
+  --color-azul-marino: #011B40;        /* rgb(1,27,64)  — primario, títulos, texto fuerte */
+  --color-azul-marino-oscuro: #011231; /* variante profunda para gradientes */
+  --color-azul-cielo: #E1F3FF;         /* rgb(225,243,255) — fondos de sección de apoyo */
+  --color-azul-cielo-suave: #F0F8FF;   /* variante más clara */
+  --color-amarillo: #FDDD3D;           /* rgb(253,221,61) — acento, CTA, detalles */
+  --color-amarillo-suave: #FEF3B0;     /* variante clara del acento */
+  --color-dorado: #C59509;             /* rgb(197,149,9) — acento secundario */
+  /* -- Alias semánticos (mantienen compatibilidad con el resto del sistema) -- */
+  --color-crema-fondo: #FFFFFF;
+  --color-lavanda-fondo: var(--color-azul-cielo);
+  --color-morado-profundo: var(--color-azul-marino);
+  --color-morado-oscuro: var(--color-azul-marino-oscuro);
+  --color-morado-medio: #2E4A73;
+  --color-morado-claro: #A9C7E8;
+  --color-dorado-claro: var(--color-amarillo-suave);
+  --color-texto-principal: #1E2936;
+  --color-texto-secundario: #54637A;
   --color-blanco: #FFFFFF;
   --color-whatsapp: #25D366;
   --color-whatsapp-oscuro: #1DA851;
-  --color-borde-suave: #E6D9EE;
+  --color-borde-suave: rgba(1, 27, 64, 0.14);
 
   /* -- Tipografía -- */
   --fuente-display: 'Fraunces', 'Georgia', serif;
@@ -63,7 +70,7 @@
   --radio-tarjeta: 2.4rem;
   --radio-arco: 22rem 22rem 1.8rem 1.8rem;
   --radio-pildora: 999px;
-  --sombra-suave: 0 1.2rem 4rem rgba(63, 39, 73, 0.1);
+  --sombra-suave: 0 1.2rem 4rem rgba(1, 27, 64, 0.1);
   --sombra-cta: 0 0.8rem 2.4rem rgba(37, 211, 102, 0.35);
   --transicion-base: 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   --curva-elegante: cubic-bezier(0.19, 1, 0.22, 1);
@@ -347,7 +354,7 @@ summary:focus-visible {
   z-index: 90;
   background:
     radial-gradient(60rem 40rem at 10% 10%, rgba(199, 174, 221, 0.18), transparent 60%),
-    linear-gradient(180deg, rgba(42, 25, 48, 0.98), rgba(63, 39, 73, 0.98));
+    linear-gradient(180deg, rgba(1, 18, 49, 0.98), rgba(1, 27, 64, 0.98));
   backdrop-filter: blur(1.2rem);
   display: flex;
   flex-direction: column;
@@ -640,7 +647,7 @@ summary:focus-visible {
   -webkit-overflow-scrolling: touch;
 }
 .viaje__linea::-webkit-scrollbar { height: 0.7rem; }
-.viaje__linea::-webkit-scrollbar-thumb { background: rgba(63, 39, 73, 0.25); border-radius: var(--radio-pildora); }
+.viaje__linea::-webkit-scrollbar-thumb { background: rgba(1, 27, 64, 0.25); border-radius: var(--radio-pildora); }
 
 .viaje__parada {
   position: relative;
@@ -734,32 +741,50 @@ summary:focus-visible {
 .credenciales-previo-precio__titulo {
   display: block;
   text-align: center;
-  margin-bottom: var(--espacio-sm);
+  margin-bottom: var(--espacio-md);
 }
 .credenciales-previo-precio {
   display: grid;
-  gap: 1rem;
+  gap: 2.4rem;
+  grid-template-columns: 1fr;
   background: var(--color-blanco);
   border: 0.1rem solid var(--color-borde-suave);
   border-radius: var(--radio-tarjeta);
-  padding: var(--espacio-md);
+  padding: clamp(2.8rem, 5vw, 4.4rem) clamp(2rem, 4vw, 3.6rem);
   box-shadow: var(--sombra-suave);
+  max-width: 84rem;
+  margin-inline: auto;
 }
 .credenciales-previo-precio__item {
   font-size: var(--texto-sm);
+  line-height: 1.6;
   color: var(--color-morado-profundo);
-  padding-left: 1.8rem;
+  padding-top: 2.8rem;
   position: relative;
+  text-align: center;
 }
 .credenciales-previo-precio__item::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 0.8rem;
-  width: 0.7rem;
-  height: 0.7rem;
-  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 2.4rem;
+  height: 0.3rem;
+  border-radius: var(--radio-pildora);
   background: var(--color-dorado);
+}
+@media (min-width: 48em) {
+  .credenciales-previo-precio {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .credenciales-previo-precio__item {
+    padding-inline: 2rem;
+  }
+  .credenciales-previo-precio__item + .credenciales-previo-precio__item {
+    border-left: 0.1rem solid var(--color-borde-suave);
+  }
 }
 
 /* ==============================================================================
@@ -1200,25 +1225,15 @@ summary:focus-visible {
    sin modificar el contenido ni la estructura HTML de la landing.
    ============================================================================ */
 :root {
-  --color-crema-fondo: #f8f3ed;
-  --color-lavanda-fondo: #eee8f3;
-  --color-morado-profundo: #35203f;
-  --color-morado-oscuro: #24152d;
-  --color-morado-medio: #775889;
-  --color-dorado: #b98d3e;
-  --color-dorado-claro: #ead9ad;
-  --color-texto-principal: #302833;
-  --color-texto-secundario: #6d6470;
-  --color-borde-suave: rgba(53, 32, 63, 0.14);
-  --sombra-suave: 0 2.4rem 7rem rgba(53, 32, 63, 0.12);
+  --sombra-suave: 0 2.4rem 7rem rgba(1, 27, 64, 0.12);
   --radio-suave: 1rem;
   --radio-tarjeta: 1.4rem;
 }
 
 body {
   background:
-    radial-gradient(circle at 8% 6%, rgba(199, 174, 221, 0.22), transparent 32rem),
-    radial-gradient(circle at 92% 38%, rgba(185, 141, 62, 0.1), transparent 28rem),
+    radial-gradient(circle at 8% 6%, rgba(169, 199, 232, 0.25), transparent 32rem),
+    radial-gradient(circle at 92% 38%, rgba(253, 221, 61, 0.08), transparent 28rem),
     var(--color-crema-fondo);
 }
 
@@ -1231,7 +1246,7 @@ body {
 .cabecera--compacta {
   background: rgb(243 237 232 / 0.94);
   border-bottom-color: var(--color-borde-suave);
-  box-shadow: 0 1.2rem 3.4rem rgba(53, 32, 63, 0.1);
+  box-shadow: 0 1.2rem 3.4rem rgba(1, 27, 64, 0.1);
   backdrop-filter: blur(1.6rem);
 }
 .cabecera__nombre,
@@ -1251,8 +1266,8 @@ body {
   padding-bottom: 0;
   color: var(--color-blanco);
   background:
-    radial-gradient(70rem 55rem at 82% 18%, rgba(119, 88, 137, 0.42), transparent 68%),
-    linear-gradient(110deg, #24152d 0%, #35203f 52%, #4d3558 100%);
+    radial-gradient(70rem 55rem at 82% 18%, rgba(46, 74, 115, 0.42), transparent 68%),
+    linear-gradient(110deg, #011231 0%, #011B40 52%, #0A2A55 100%);
 }
 .heroe::before {
   content: "";
@@ -1280,7 +1295,7 @@ body {
   border-radius: 0;
   box-shadow: none;
   clip-path: polygon(14% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
-  background: #24152d;
+  background: #011231;
 }
 .heroe__imagen { object-position: center center; filter: saturate(0.88) contrast(1.04); }
 .heroe__insignia-flotante {
@@ -1300,14 +1315,14 @@ body {
   z-index: 2;
   background: rgba(248, 243, 237, 0.94);
   border-top: 0.1rem solid rgba(234, 217, 173, 0.58);
-  box-shadow: 0 -1.6rem 4rem rgba(36, 21, 45, 0.08);
+  box-shadow: 0 -1.6rem 4rem rgba(1, 18, 49, 0.08);
 }
-.estadistica { border-color: rgba(53, 32, 63, 0.14); }
+.estadistica { border-color: rgba(1, 27, 64, 0.14); }
 .estadistica__etiqueta { color: var(--color-texto-secundario); }
 .estadistica__numero { color: var(--color-morado-profundo); }
 
 .seccion { padding-block: clamp(6.4rem, 9vw, 11rem); position: relative; }
-.seccion--lavanda { background: linear-gradient(135deg, #eee8f3, #f6eff8 60%, #eee8f3); }
+.seccion--lavanda { background: var(--color-lavanda-fondo); }
 .seccion__cabecera { margin-bottom: clamp(3.2rem, 5vw, 6.4rem); }
 .seccion__ojo { color: var(--color-dorado); letter-spacing: 0.2em; }
 .seccion__ojo::before { content: "✦"; margin-right: 0.8rem; color: var(--color-morado-medio); }
@@ -1320,25 +1335,25 @@ body {
 .incluye__tarjeta,
 .diferencial__tarjeta,
 .como-funciona-resumen__paso,
-.pasos__item { border-radius: 0.8rem; border-color: rgba(53, 32, 63, 0.12); box-shadow: 0 1.2rem 3.2rem rgba(53, 32, 63, 0.06); }
+.pasos__item { border-radius: 0.8rem; border-color: rgba(1, 27, 64, 0.12); box-shadow: 0 1.2rem 3.2rem rgba(1, 27, 64, 0.06); }
 .autoridad__credencial { background: rgba(255, 255, 255, 0.58); }
 .autoridad__credencial-icono { background: var(--color-morado-profundo); color: var(--color-dorado-claro); }
 .puente__tarjeta { border-radius: 0.8rem; box-shadow: var(--sombra-suave); }
 .puente__tarjeta--sin { background: rgba(255, 255, 255, 0.72); }
-.puente__tarjeta--con { background: linear-gradient(135deg, #35203f, #5a3f68); }
+.puente__tarjeta--con { background: linear-gradient(135deg, #011B40, #0A2A55); }
 .viaje__parada { border-radius: 0.8rem; }
 .viaje__numero { background: var(--color-blanco); border: 0.2rem solid var(--color-dorado); color: var(--color-morado-profundo); box-shadow: 0 0 0 0.6rem var(--color-crema-fondo); }
 .incluye__tarjeta:hover,
 .diferencial__tarjeta:hover,
 .como-funciona-resumen__paso:hover,
 .pasos__item:hover { transform: translateY(-0.6rem); border-color: rgba(185, 141, 62, 0.5); }
-.precio__tarjeta { border-radius: 1.2rem; background: linear-gradient(135deg, #24152d, #4d3558); box-shadow: 0 2.8rem 8rem rgba(53, 32, 63, 0.24); }
+.precio__tarjeta { border-radius: 1.2rem; background: linear-gradient(135deg, #011231, #0A2A55); box-shadow: 0 2.8rem 8rem rgba(1, 27, 64, 0.24); }
 .precio__panel { border-radius: 0.8rem; }
 .modalidad__tarjeta { border-radius: 0.8rem; box-shadow: var(--sombra-suave); }
 .marquesina { background: var(--color-morado-profundo); }
 .faq__item { border-radius: 0.8rem; background: rgba(255, 255, 255, 0.72); }
 .post-whatsapp { border-radius: 0.8rem; box-shadow: var(--sombra-suave); }
-.cta-final { background: linear-gradient(120deg, #24152d, #4d3558 68%, #35203f); }
+.cta-final { background: linear-gradient(120deg, #011231, #0A2A55 68%, #011B40); }
 .cta-final__prueba { border-radius: 0.8rem; }
 .pie { background: #f2ebe5; }
 
