@@ -1,0 +1,8 @@
+[submodule "ud_puede_sanar_su_vida"]
+	path = ud_puede_sanar_su_vida
+	url = https://github.com/MaickR/ud_puede_sanar_su_vida.git
+	branch = main
+[submodule "vientre_divino"]
+	path = vientre_divino
+	url = https://github.com/MaickR/vientre_divino.git
+	branch = main
