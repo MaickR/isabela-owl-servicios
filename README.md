@@ -1,6 +1,6 @@
 <div align="center">
 
-# Isabela Tena · Programa Integral
+# Isabela Tena · Programa de Transformación Integral Owl
 
 **Landing bilingüe de alto impacto para el programa de transformación de Isabela Tena**
 Mundo Holístico USA · Hipnoterapia, regresión y meditación Kriya
@@ -19,7 +19,7 @@ Mundo Holístico USA · Hipnoterapia, regresión y meditación Kriya
 
 ## Descripción
 
-Landing page de conversión para el **Programa Integral de Transformación** — un proceso 1:1 de 5 sesiones y ~25 horas guiado por Isabela Tena. Diseño editorial minimalista y elegante, optimizado para convertir visitas en consultas directas por WhatsApp.
+Landing page de conversión para el **Programa de Transformación Integral Owl** — un proceso 1:1 de 5 sesiones y ~25 horas guiado por Isabela Tena. Diseño editorial minimalista y elegante, optimizado para convertir visitas en consultas directas por WhatsApp.
 
 Totalmente bilingüe (inglés y español), responsive de 375px a 2560px y sin proceso de build.
 
@@ -29,7 +29,7 @@ Totalmente bilingüe (inglés y español), responsive de 375px a 2560px y sin pr
 - **Bilingüe nativo** — paridad completa entre `index.html` (EN) e `index-es.html` (ES) con selector de idioma.
 - **Conversión por WhatsApp** — CTAs contextuales con mensajes predefinidos y número configurado.
 - **Accesible** — WCAG 2.1 AA: foco visible, ARIA sincronizado, skip link y `prefers-reduced-motion`.
-- **SEO técnico** — Open Graph, Twitter Cards, JSON-LD (Schema.org `Service`) y canonical.
+- **SEO técnico** — Open Graph, Twitter Cards, JSON-LD (Schema.org `Service`), hreflang ES/EN, sitemap.xml y robots.txt.
 - **Rendimiento** — imágenes con dimensiones explícitas, `loading="lazy"`, `fetchpriority` y favicon multiplataforma.
 - **Mobile-first** — menú hamburguesa a pantalla completa, grid fluido y animaciones progresivas.
 
@@ -42,9 +42,13 @@ Totalmente bilingüe (inglés y español), responsive de 375px a 2560px y sin pr
 │   └── estilos.css         # Sistema de diseño (BEM + variables :root)
 ├── js/
 │   └── aplicacion.js       # Interacciones (ES2026+, delegación de eventos)
-├── img/                    # Fotografías y logo
+├── img/                    # Fotografías y logo (optimizadas)
+├── assets/                 # Imagen Open Graph (1200×630)
+├── _archivo/               # Versiones e imágenes retiradas (fuera de producción)
 ├── favicon.ico / *.png     # Favicon 16→512px + Apple/Android
-└── site.webmanifest        # Soporte PWA básico
+├── site.webmanifest        # Soporte PWA básico
+├── robots.txt              # Rastreo permitido; excluye _archivo/
+└── sitemap.xml             # Sitemap bilingüe con hreflang
 ```
 
 Sin build ni dependencias locales — solo HTML, CSS y JS estáticos.
