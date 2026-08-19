@@ -289,8 +289,11 @@ const manejarClickDelegado = (evento) => {
   if (conAccion?.dataset.accion === 'alternar-menu') { alternarMenuMovil(); return; }
   if (conAccion?.dataset.accion === 'cerrar-menu') { alternarMenuMovil(true); return; }
 
+  // POR QUÉ: el panel móvil es pantalla completa (fixed inset:0), por lo que
+  // "tocar fuera" en realidad cae SIEMPRE dentro del panel. Se interpreta como
+  // toque de cierre cualquier clic que no caiga sobre un enlace o botón.
   const panel = document.getElementById('panel-movil');
-  if (menuMovilAbierto() && panel && objetivo === panel) {
+  if (menuMovilAbierto() && panel && panel.contains(objetivo) && !objetivo.closest('a, button')) {
     alternarMenuMovil(true);
     return;
   }
