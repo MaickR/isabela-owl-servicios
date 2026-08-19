@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_archivo/
+
+Sitemap: https://mundoholistico.com/sitemap.xml
