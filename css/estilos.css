@@ -26,7 +26,7 @@
   --color-azul-cielo-suave: #F0F8FF;   /* variante más clara */
   --color-amarillo: #FDDD3D;           /* rgb(253,221,61) — acento, CTA, detalles */
   --color-amarillo-suave: #FEF3B0;     /* variante clara del acento */
-  --color-dorado: #8F6E04;             /* rgb(143,110,4) — acento secundario; oscurecido para contraste AA 4.77:1 sobre blanco */
+  --color-dorado: #C59509;             /* rgb(197,149,9) — acento secundario */
   /* -- Alias semánticos (mantienen compatibilidad con el resto del sistema) -- */
   --color-crema-fondo: #FFFFFF;
   --color-lavanda-fondo: var(--color-azul-cielo);
@@ -38,8 +38,8 @@
   --color-texto-principal: #1E2936;
   --color-texto-secundario: #54637A;
   --color-blanco: #FFFFFF;
-  --color-whatsapp: #128C7E;           /* verde azulado oficial de WhatsApp; AA para texto grande/negrita (4.14:1) */
-  --color-whatsapp-oscuro: #0E7A5F;    /* hover; AA completo 5.29:1 */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-oscuro: #1DA851;
   --color-borde-suave: rgba(1, 27, 64, 0.14);
 
   /* -- Tipografía -- */
@@ -199,6 +199,8 @@ summary:focus-visible {
   overflow: hidden;
 }
 .marcador-imagen--panoramico { aspect-ratio: 16 / 10; height: auto; }
+.marcador-imagen__icono { width: 4.8rem; height: 4.8rem; opacity: 0.85; }
+.marcador-imagen__texto { font-size: var(--texto-xs); opacity: 0.85; max-width: 22rem; }
 .marcador-imagen__foto {
   width: 100%;
   height: 100%;
@@ -244,7 +246,6 @@ summary:focus-visible {
   z-index: 100;
   padding-block: var(--espacio-xs);
   background-color: rgba(251, 246, 239, 0.92);
-  -webkit-backdrop-filter: blur(0.8rem);
   backdrop-filter: blur(0.8rem);
   border-bottom: 0.1rem solid transparent;
   transition: padding var(--transicion-base), border-color var(--transicion-base), box-shadow var(--transicion-base);
@@ -354,7 +355,6 @@ summary:focus-visible {
   background:
     radial-gradient(60rem 40rem at 10% 10%, rgba(199, 174, 221, 0.18), transparent 60%),
     linear-gradient(180deg, rgba(1, 18, 49, 0.98), rgba(1, 27, 64, 0.98));
-  -webkit-backdrop-filter: blur(1.2rem);
   backdrop-filter: blur(1.2rem);
   display: flex;
   flex-direction: column;
@@ -367,8 +367,6 @@ summary:focus-visible {
   visibility: hidden;
   pointer-events: none;
   transition: transform 0.55s var(--curva-elegante), opacity 0.35s ease, visibility 0s linear 0.55s;
-  min-height: 100vh; /* fallback para Safari < 15.4 */
-  max-height: 100vh;
   min-height: 100dvh;
   max-height: 100dvh;
   overflow-y: auto;
@@ -850,6 +848,19 @@ summary:focus-visible {
   background: var(--color-dorado-claro);
 }
 .precio__lista-equilibrada--comparativa li::before { background: rgba(255, 255, 255, 0.7); }
+.precio__incluye {
+  display: grid;
+  gap: 1rem;
+  text-align: left;
+  max-width: 46rem;
+  margin: var(--espacio-md) 0 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: var(--texto-sm);
+}
+.precio__incluye-item { display: flex; gap: 1rem; }
+.precio__lista-beneficios { display: grid; gap: 1rem; margin-top: var(--espacio-md); color: rgba(255, 255, 255, 0.9); }
+.precio__lista-beneficios li { padding-left: 1.8rem; position: relative; }
+.precio__lista-beneficios li::before { content: ""; position: absolute; left: 0; top: 0.9rem; width: 0.7rem; height: 0.7rem; border-radius: 50%; background: var(--color-dorado-claro); }
 .precio__cta-contenedor {
   display: grid;
   justify-items: center;
@@ -1200,6 +1211,7 @@ summary:focus-visible {
   .heroe__subtitulo { font-size: 1.8rem; }
   .precio__tarjeta { padding: var(--espacio-md); }
   .precio__cifra { font-size: clamp(4rem, 14vw, 6rem); }
+  .precio__incluye { font-size: 1.5rem; }
   .cta-final__pruebas { width: 100%; }
   .pie__secundario { grid-template-columns: 1fr; }
   .pie__grid { justify-items: center; text-align: center; }
@@ -1235,7 +1247,6 @@ body {
   background: rgb(243 237 232 / 0.94);
   border-bottom-color: var(--color-borde-suave);
   box-shadow: 0 1.2rem 3.4rem rgba(1, 27, 64, 0.1);
-  -webkit-backdrop-filter: blur(1.6rem);
   backdrop-filter: blur(1.6rem);
 }
 .cabecera__nombre,
